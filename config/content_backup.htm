@@ -479,8 +479,212 @@
 <h2>CH 4  3D建模</h2>
 <h2>CH 5  草圖</h2>
 <h2>CH 6  組裝模型</h2>
-<h2>CH 7  曲面建模</h2>
-<h2>CH 8  有限元素分析</h2>
+<p><span>第6章-裝配建模</span></p>
+<p><span>每天，我們都會看到許多將組件組裝成一個模型的示例，例如自行車，汽車和計算機。所有這些產品都是通過設計和製造單個零件，然後將它們裝配在一起而創建的。創建它們的設計師必須仔細計劃每個零件，以便它們都能完美地配合在一起以執行所需的功能。在本章中，您將學習在裝配體建模中使用的兩種方法。我們將以葉輪組件為例進行組件建模。該程序集的某些部分已經在較早的章節中進行了建模。 NX 12 Assembly是包含各個零件的零件文件。它們以這樣的方式添加到零件文件中，即零件實際上位於裝配體中並鏈接到原始零件。這樣就無需為計算機中的各個部件創建單獨的存儲空間。所有零件都是可選的，可在設計過程中用於信息和配合，以確保設計者想要的完美配合。下圖顯示瞭如何添加零部件以構成裝配體。</span></p>
+<p><span><img alt="" height="156" src="https://s40723233.github.io/cad2019/images/1.jpg" width="358"/></span></p>
+<p><span>6.1術語裝配</span></p>
+<p><span>裝配是指向零件和/或子裝配的指針的集合。裝配體是零件文件，其中包含零部件對象。零部件對象零部件對像是指向包含零部件幾何形狀的零件文件的非幾何指針。零部件對象存儲信息，例如圖層，顏色，參考集，零部件相對於文件系統中零部件的裝配體和路徑的位置數據。 NX 12用於工程設計123密蘇里科技大學零件零件是零件的一個零件文件，該零件在裝配體中指向。實際的幾何圖形存儲在零部件中，並且被引用，而不是由裝配體複製。零部件的出現零部件的出現是指向零部件文件中幾何圖形的指針。使用零部件實例來創建一個或多個零部件參考，而無需創建其他幾何體。參考集參考集是零部件或子裝配中的對象的命名集合，可用於簡化高層裝配中零部件的表示。</span></p>
+<p><span><img alt="" height="134" src="https://s40723233.github.io/cad2019/images/2.jpg" width="276"/></span></p>
+<p><span>6.2組裝方法創建任何組裝模型的基本方法有兩種。</span></p>
+<p><span>•自上而下的方法</span></p>
+<p><span>•自下而上的方法</span></p>
+<p><span>6.2.1自上而下的方法</span></p>
+<p><span>在此方法中，首先創建裝配零件文件，然後在該文件中創建零部件。然後對各個零件進行建模。這種類型的建模在新設計中很有用。</span></p>
+<p><span><img alt="" height="501" src="https://s40723233.github.io/cad2019/images/3.jpg" width="380"/></span></p>
+<p><span>6.2.2自下而上的方法</span></p>
+<p><span>首先以傳統方式創建零部件，然後將其添加到裝配零件文件中。當零件文件已經存在於先前的設計中並且可以重複使用時，此技術特別有用。</span></p>
+<p><span>6.2.3混合和匹配</span></p>
+<p><span>可以在必要時將這兩種方法結合使用，以增加裝配設計需求的靈活性。 6.3裝配和約束導航器裝配導航器和約束導航器位於屏幕左側資源欄中零件導航器的頂部。這些導航器向您顯示構成裝配體的各種內容，包括零件層次結構，零件名稱，有關零件的信息，例如零件是否為只讀，對像數以及約束狀態。</span></p>
+<p><span>6.4匹配約束</span></p>
+<p><span>將零部件對象添加到裝配零件文件後，每個零部件對像都將與現有對象配對。通過在裝配的零部件上分配配合條件，可以在這些零部件之間建立位置關係或約束。這些關係稱為配合約束。配合條件由一個或多個配合約束組成。有不同的配合約束，如下所述：</span></p>
+<p><span><img alt="" height="36" src="https://s40723233.github.io/cad2019/images/5.jpg" width="33"/>觸摸/對齊：選擇進行對齊的平面對象將是共面的，但是平面的法線將指向相同的方向。圓柱對象的中心線將彼此對齊。</span></p>
+<p><span><img alt="" height="25" src="https://s40723233.github.io/cad2019/images/6.jpg" width="25"/>同心：約束兩個分量的圓形或橢圓形邊緣，以使中心重合，並且邊緣的平面共面。</span></p>
+<p><span><img alt="" height="29" src="https://s40723233.github.io/cad2019/images/7.jpg" width="29"/>距離：這將在兩個對象之間建立一個+/-距離（偏移）值。</span></p>
+<p><span><img alt="" height="31" src="https://s40723233.github.io/cad2019/images/8.jpg" width="28"/>平行：所選對象將彼此平行。</span></p>
+<p><span><img alt="" height="24" src="https://s40723233.github.io/cad2019/images/9.jpg" width="31"/>垂直：所選對象將彼此垂直。</span></p>
+<p><span>鍵合：創建焊接並將零件焊接在一起以作為單個對象移動。</span></p>
+<p><span>居中：對象將在其他對象之間居中，即沿槽定位圓柱並將圓柱在槽中居中。</span></p>
+<p><span>角度：這將在要組裝的零部件上選擇的兩個對象實體之間固定一個恆定的角度</span></p>
+<p><span>6.5示例</span></p>
+<p><span>我們將組裝葉輪組件對象。您已經在前面的章節中對所有組件進行了建模。現在，我們必須將它們插入到組裝環境中，並應用約束以使它們相對於彼此定位。組裝完成後，我們可以創建分解圖並準備工程圖。在開始裝配建模之前，請在Hexabolt的葉輪下部殼體和葉輪上部殼體的每一側上分別製造三個通孔（每個殼體總共6個孔）。孔的直徑應為0.25，其位置應與下圖相似。確保下部和上部機殼在相同的位置上打孔，以便在組裝時匹配。</span></p>
+<p><span><img alt="" height="199" src="https://s40723233.github.io/cad2019/images/1575569597083.jpg" width="342"/></span></p>
+<p><span>6.5.1開始裝配</span></p>
+<p><span>➢創建新文件</span></p>
+<p><span>➢在“模型”選項卡下選擇“裝配”</span></p>
+<p><span>➢將單位設置為英寸</span></p>
+<p><span>➢將其命名為Impeller_assembly.prt</span></p>
+<p><span><img alt="" height="561" src="https://s40723233.github.io/cad2019/images/13.jpg" width="713"/></span></p>
+<p><span>或者，如果您在建模應用程序中並想開始組裝，則</span></p>
+<p><span>➢在“應用程序”選項卡中打開“組裝”選項，然後會出現一個新的“組裝”選項卡</span></p>
+<p><span>0<img alt="" height="111" src="https://s40723233.github.io/cad2019/images/14.jpg" width="554"/></span></p>
+<p><span>➢單擊文件→程序集，如下所示</span></p>
+<p><span>0<img alt="" height="563" src="https://s40723233.github.io/cad2019/images/15.jpg" width="599"/></span></p>
+<p><span>在“組件”選項中，</span></p>
+<p><span>•“添加”選項將添加其零件文件已創建的新組件對象。</span></p>
+<p><span>•“新建”使您可以在使用自頂向下的裝配方法時在裝配文件中創建新的零部件幾何。裝配約束允許您創建裝配約束，而“移動零部件”則允許您將零部件重新放置在裝配中所需的位置。</span></p>
+<p><span>0<img alt="" height="91" src="https://s40723233.github.io/cad2019/images/16.jpg" width="776"/></span></p>
+<p><span>6.5.2添加組件和約束</span></p>
+<p><span>➢選擇添加將彈出右側所示的對話框。您可以從現有文件中選擇零件文件（應該已經在“已加載零件”選項卡中顯示），也可以使用對話框中的“打開文件”選項來加載零件文件。這會將選定的零件文件加載到“加載的零件”對話框中。</span></p>
+<p><span>➢單擊“打開”圖標，然後選擇文件Impeller_upper-casing.prt。</span></p>
+<p><span>➢在“零件名稱”對話框中單擊“確定”。然後，我們需要設置一個位置來放置第一個零部件的坐標系。在“位置”組框中，保留“裝配位置”的默認“捕捉”選項。</span></p>
+<p><span>➢單擊選擇對象現在，您應該能夠以透明模式查看零件，如右側圖所示。</span></p>
+<p><span>➢單擊“點對話框”圖標並創建[0，0，0]的坐標。</span></p>
+<p><span>➢單擊“確定”退出“點對話框”。注意：可以隨意使用“循環方向”選項來設置不同的方向。</span></p>
+<p><span>➢在“放置”組框中，我們可以定義該組件的放置位置和放置方式。在這種情況下，我們會將選項保留為默認值。</span></p>
+<p><span>➢單擊“確定”退出“添加組件”對話框。然後，您將看到一個彈出對話框，如下圖所示。</span></p>
+<p><span>0<img alt="" height="196" src="https://s40723233.github.io/cad2019/images/18.jpg" width="464"/></span></p>
+<p><span>➢單擊“是”為該零件創建一個“修復”約束。現在您所擁有的應該如下圖所示。</span></p>
+<p><span>讓我們繼續添加第二個組件，即下部外殼。</span></p>
+<p><span>0<img alt="" height="264" src="https://s40723233.github.io/cad2019/images/19.jpg" width="401"/></span></p>
+<p><span>➢單擊裝配部分中的添加➢從“零件”或“打開”中選擇文件Impeller_lower-casing.prt➢在“位置”組框中，將選項更改為“絕對–工件”以將新零件放置在當前工件的絕對原點處零件</span></p>
+<p><span>➢在“放置”組框中，首先切換“移動”單選按鈕，然後將下殼體移離上殼體，以留出足夠的空間來選擇配合面。您將擁有的內容應該類似於下圖。</span></p>
+<p><span>0<img alt="" height="351" src="https://s40723233.github.io/cad2019/images/20.jpg" width="375"/></span></p>
+<p><span>➢然後，切換約束單選按鈕。現在，讓我們配對上殼體和下殼體。您可以在“約束類型”框中的下拉菜單中訪問所有約束。在這裡，您可以看到不同的配合類型，這在上一節中已進行了說明。</span></p>
+<p><span>➢確保在“類型”對話框中選擇了“觸摸對齊”圖標。</span></p>
+<p><span>➢首先，選擇箭頭指向的面，如左圖所示。</span></p>
+<p><span>➢如右圖所示，在屏幕上單擊上殼體的表面。</span></p>
+<p><span>0<img alt="" height="296" src="https://s40723233.github.io/cad2019/images/1a.jpg" width="639"/></span></p>
+<p><span>您可能必須調整視圖才能選擇面。選擇這兩個面後，將自動添加“觸摸對齊”約束。讓我們添加另一個“觸摸對齊”約束。</span></p>
+<p><span>➢單擊上套管的法蘭➢單擊下套管的法蘭，您可能需要通過單擊“反”來反轉約束方向</span></p>
+<p><span>0<img alt="" height="328" src="https://s40723233.github.io/cad2019/images/1b.jpg" width="598"/></span></p>
+<p><span><img alt="" height="366" src="https://s40723233.github.io/cad2019/images/1c.jpg" width="446"/></span></p>
+<p><span>下殼體相對於上殼體受到約束。現在讓我們添加葉輪。</span></p>
+<p><span>➢選擇裝配體→零部件→添加以將零部件添加到當前裝配體中</span></p>
+<p><span>➢打開文件Impeller_impeller.prt</span></p>
+<p><span>➢在對話框中單擊確定➢選擇絕對–裝配體位置的工作零件</span></p>
+<p><span>0<img alt="" height="334" src="https://s40723233.github.io/cad2019/images/22.jpg" width="721"/></span></p>
+<div id="translation">
+<div class="gtx-body">➢切換“約束”按鈕➢單擊“約束類型”框中的“距離”圖標➢選擇兩個面，首先在葉輪上，然後在殼體上，如下圖所示</div>
+<div class="gtx-body"></div>
+</div>
+<div id="buttons">0<img alt="" height="369" src="https://s40723233.github.io/cad2019/images/23.jpg" width="611"/></div>
+<p><span>➢在“放置”組的“距離”框中，輸入3的值。</span></p>
+<p><span>➢按Enter預覽當前組件。預覽可能會顯示葉輪的方向與我們想要的方向相反。</span></p>
+<p><span>0<img alt="" height="164" src="https://s40723233.github.io/cad2019/images/24.jpg" width="416"/></span></p>
+<p><span>➢要更改零件的方向或距離方向，請在“放置”窗口中，單擊“幾何要約束”框中的“循環最後約束”按鈕，如下所示</span></p>
+<p><span>0<img alt="" height="384" src="https://s40723233.github.io/cad2019/images/21.jpg" width="584"/></span></p>
+<p><span>➢同樣，將六個墊圈和六個六角螺母分別向下移動至-30和-35。這是裝配體的分解圖。您可以旋轉並查看其外觀。</span></p>
+<p><span>0<img alt="" height="513" src="https://s40723233.github.io/cad2019/images/26.jpg" width="681"/></span></p>
+<p><span>如果要返回原始未爆炸視圖，請單擊功能區中的爆炸視圖→從下拉菜單中選擇（不爆炸），如下所示</span></p>
+<p><span>0<img alt="" height="436" src="https://s40723233.github.io/cad2019/images/27.jpg" width="483"/></span></p>
+<p><span>6.6.3千斤頂千斤</span></p>
+<p><span>頂螺釘是一種通過轉動導螺桿來操作的千斤頂。在本練習中，將要求您建模，組裝和準備零件圖紙。所有尺寸均應以毫米為單位。為每個組件創建單獨的草稿。起草最終裝配並製作表格，列出各個零部件。大會草案應有分解圖。</span></p>
+<p><span>0<img alt="" height="771" src="https://s40723233.github.io/cad2019/images/5555.jpg" width="606"/></span></p><h2>CH 7  曲面建模</h2>
+<p><span title="NX 12 for Engineering Design"><span>在本章中，您將學習如何在NX 12中創建自由曲面。至此，您已經學習了使用“表單特徵”或“草圖繪製”創建模型的不同方法。</span></span></p>
+<p><span title="NX 12 for Engineering Design"><span><img alt="" height="249" src="https://s40723238.github.io/cad2019/images/chrome_nRRajLVO9w.png" width="390"/></span></span></p>
+<p><span title="NX 12 for Engineering Design"><span></span></span></p>
+<div id="pageselector-container"><viewer-page-selector class="" id="pageselector">
+<div id="pageselector-container"><cr-input aria-disabled="false" aria-label="頁碼" id="pageselector" tabindex="0">
+<div id="row-container" part="row-container">
+<div id="input-container">
+<div id="inner-input-container"><slot name="prefix"></slot></div>
+</div>
+</div>
+</cr-input></div>
+</viewer-page-selector></div>
+<p><a href="https://s40723238.github.io/cad2019/content/cad_history%E7%AC%AC18%E7%AB%A0.html">cad_history第18章</a></p>
+<p><span>7.1</span>概述</p>
+<p>在<span>NX 12</span>中，“自由格式功能”選項位於菜單→插入→表面<span>/</span>網格表面<span>/</span>掃描<span>/</span>法蘭表面和菜單→編輯→表面等不同位置，以進行更高級的操作。</p>
+<p><span>7.1.1</span>從點創建自由特徵</p>
+<p>如果您要構造或預先存在的數據僅包含點，則可以嘗試使用以下三個選項之一從給定點構建曲面。</p>
+<p>按<span><span> </span>Menu,<span> </span></span>按<span>Insert → Surface</span></p>
+<p><span>Four Point Surface:<span> </span></span>如果您有四個角點。</p>
+<p><span>Through Points:<span> </span></span>如果這些點形成一個矩形陣列。</p>
+<p><span>From Poles:<span> </span></span>如果定義的點形成與通過它們的線相切的矩形陣列。</p>
+<p><img alt="" height="142" src="https://s40723238.github.io/cad2019/images/chrome_Ucx6a1NfEF.png" width="41"/></p>
+<p><span>7.1.2</span>通過節字符串創建自由格式特徵</p>
+<p>如果構造幾何包含連接對象（曲線和邊）的字符串，則可以使用以下兩個選項之一來創建自由曲面。</p>
+<p>按<span><span> </span>Menu,<span> </span></span>按<span><span> </span>Insert → Mesh Surface</span></p>
+<p><span><img alt="" height="42" src="https://s40723238.github.io/cad2019/images/chrome_arnh1EuY49.png" width="46"/></span><span>Ruled:<span> </span></span>如果您有兩個大致平行的字符串</p>
+<p><img alt="" height="35" src="https://s40723238.github.io/cad2019/images/chrome_iSWrOPgDpP.png" width="43"/><span>Through Curves:</span>如果三個或更多字符串大致平行。</p>
+<p><img alt="" height="50" src="https://s40723238.github.io/cad2019/images/chrome_Khkkc2s5xb.png" width="47"/>Through Curve Mesh: 如果在每個方向（平行和垂直）上至少有四個弦且至少有兩個弦，則使用此命令。</p>
+<p><img alt="" height="49" src="https://s40723238.github.io/cad2019/images/chrome_3mYBy1pmJm.png" width="41"/><span>Swept:<span> </span></span>如果至少兩個部分字符串大致相同，則使用垂直</p>
+<p><span>7.1.3</span>從面孔創建自由特徵</p>
+<p>如果構造幾何包含圖紙或面，則可以使用以下兩個選項之一來構造自由曲面。</p>
+<p><img alt="" height="48" src="https://s40723238.github.io/cad2019/images/chrome_vlZ3DTkrWk.png" width="41"/><span>Offset Surface:<span> </span></span>如果您要偏移面，請使用此選項。</p>
+<p><img alt="" height="37" src="https://s40723238.github.io/cad2019/images/chrome_sDQN5mZrIn.png" width="44"/><span>Extension:<span> </span></span>如果您有邊曲線或曲線，請使用此選項。</p>
+<p><span>7.2</span>自由格式功能建模</p>
+<p>讓我們來進行一些自由結構建模的練習，其中包括結構化點，點雲，曲線和麵。</p>
+<p>打開文件<span>freeform_thrupoints.pr</span></p>
+<p>右鍵單擊工具欄，並確保已選中“曲面工具欄”</p>
+<p><img alt="" height="216" src="https://s40723238.github.io/cad2019/images/chrome_BSKKWDYfNa.png" width="318"/></p>
+<p>您將看到七行點。</p>
+<p>選<span>Insert →Surface →Through Points</span></p>
+<p>對話框如下圖所示彈出。</p>
+<p><span>Patch Type, </span>選<span> Multiple</span></p>
+<p><span>Closed Along,<span> </span></span>選<span><span> </span>Neither</span></p>
+<p><span>Row Degree and Column Degree,<span> </span></span>都選<span><span> </span>3.</span></p>
+<p>按下<span><span> </span>OK</span></p>
+<p><img alt="" height="397" src="https://s40723238.github.io/cad2019/images/chrome_afcECulchk.png" width="260"/></p>
+<p><span></span></p>
+<p>下一個對話框將如上圖所示</p>
+<p>按<span>Chain from All</span></p>
+<p>選擇最左行的頂部起點和底部終點，如下圖所示</p>
+<p><img alt="" height="251" src="https://s40723238.github.io/cad2019/images/chrome_cJPaQELkOR.png" width="385"/></p>
+<p>點的第一行將突出顯示。</p>
+<p>重複相同的過程以選擇點的前四行。</p>
+<p>之後，將彈出一個窗口，詢問是否指定了所有點或是否要指定另一行。</p>
+<p><img alt="" height="129" src="https://s40723238.github.io/cad2019/images/chrome_qMh5YMRfui.png" width="285"/></p>
+<p>按<span><span> </span>Specify Another Row<span> </span></span>直到所有行都被指定的</p>
+<p>指定所有行後，選擇“<span>All Points Specified</span>”</p>
+<p>在“<span>Through Points</span>”窗口上單擊“<span>Cancel</span>”</p>
+<p>您將看到如下所示的表面。</p>
+<p><img alt="" height="211" src="https://s40723238.github.io/cad2019/images/chrome_Ufy7SHgtal.png" width="336"/></p>
+<p><span>7.2.2</span>使用點雲建模</p>
+<p>打開名為<span>freeform_cloud.prt</span>的文件</p>
+<p>點雲將如下所示。</p>
+<p><img alt="" height="255" src="https://s40723238.github.io/cad2019/images/chrome_L6GeEAcC9p.png" width="408"/></p>
+<p>按<span>Insert → Surface → Fit Surface</span></p>
+<p>將出現以下對話框。</p>
+<p><img alt="" height="505" src="https://s40723238.github.io/cad2019/images/chrome_Uo7Zqal7nl.png" width="244"/></p>
+<p>單擊屏幕上的，選擇屏幕上的所有點點雲。</p>
+<p>在<span>Fit Direction</span>下拉菜單中，選擇<span>Best Fit</span>。 這使點雲坐標係與原始系統匹配</p>
+<p>將<span>U</span>度和<span>V</span>度的默認值更改為<span>3</span></p>
+<p>按<span><span> </span>OK</span></p>
+<p><span>最終表面將如下所示。</span></p>
+<p><span><img alt="" height="287" src="https://s40723238.github.io/cad2019/images/chrome_nPHbF7er5S.png" width="437"/></span></p>
+<p><span>7.2.3</span>使用曲線建模</p>
+<p>打開名為<span>freeform_thrucurves_parameter.prt</span>的文件</p>
+<p>曲線如下圖所示</p>
+<p><img alt="" height="202" src="https://s40723238.github.io/cad2019/images/chrome_ldIDoMygCY.png" width="390"/></p>
+<p>按下<span> Insert → Mesh Surface → Through Curves</span></p>
+<p>選擇第一個<span>section string</span>，如下所示。 確保選擇圓弧左側的某個位置。</p>
+<p>方向矢量顯示在字符串的末尾。</p>
+<p><img alt="" height="133" src="https://s40723238.github.io/cad2019/images/chrome_17eAUArYqs.png" width="309"/></p>
+<p>單擊鼠標中鍵<span>MB2</span>或單擊<span>Add New Set</span></p>
+<p>單擊與第一個相似的下一條曲線，然後單擊鼠標中鍵MB2。 您可以看到兩條</p>
+<p>曲線之間生成的曲面，如下圖所示</p>
+<p><img alt="" height="145" src="https://s40723238.github.io/cad2019/images/chrome_2dHUEGk7vi.png" width="308"/></p>
+<p>重複相同的過程以選擇其餘的字符串。 選擇每條曲線後，請記住單擊<span>MB2</span>（或“<span>Add New Set</span>”）</p>
+<p><span>Alignment,<span> </span></span>按<span><span> </span>Parameter</span></p>
+<p><span>Patch Type,<span> </span></span>按<span><span> </span>Single</span></p>
+<p><span>Construction,<span> </span></span>按<span><span> </span>Simple</span></p>
+<p>當選擇“簡單”選項時，系統將嘗試構建盡可能簡單的表面並最小化面片的數量。</p>
+<p>按<span>OK</span></p>
+<p><span><img alt="" height="567" src="https://s40723238.github.io/cad2019/images/chrome_WW1ycWHQZA.png" width="249"/><img alt="" height="135" src="https://s40723238.github.io/cad2019/images/chrome_YGe0gr2pYs.png" width="241"/></span></p>
+<p><span>7.2.4</span>使用曲線和面建模</p>
+<p>打開名為<span>freeform_thrucurves_faces.prt</span>的文件</p>
+<p><img alt="" height="271" src="https://s40723238.github.io/cad2019/images/chrome_b9N8ItWg9u.png" width="333"/></p>
+<p>曲線和面將如上圖所示</p>
+<p>按<span><span> </span>Insert →Mesh Surface →Through Curves</span></p>
+<p>選擇頂面的<span>edge1</span></p>
+<p>選擇<span>edge-2</span>，然後單擊<span>MB2</span></p>
+<p>選擇<span>edge-3</span></p>
+<p>在對話框的“<span>Alignment</span>”部分下，取消選中“<span>Alignment</span>”複選框</p>
+<p>您將在屏幕上顯示以下形狀。</p>
+<p><img alt="" height="230" src="https://s40723238.github.io/cad2019/images/chrome_8D4UNtAXPb.png" width="308"/></p>
+<p>確保所有箭頭都指向相同的方向（如果不是，請雙擊任意一個箭頭以反轉其方向）。</p>
+<p>在“<span>Alignment</span>”對話框中，選擇“<span>Parameter</span>”</p>
+<p>在“<span>Continuity</span>”對話框的“<span>for First Section</span>”中，選擇“<span><span> </span>G2</span>（<span>Curvature)</span>”選項，然後選擇頂面的兩個色塊。</p>
+<p>按<span><span> </span>APPLY</span></p>
+<p><span><img alt="" height="263" src="https://s40723238.github.io/cad2019/images/chrome_W0ZfmxpywW.png" width="369"/></span></p>
+<p>現在選擇<span>edge-3</span>，然後單擊<span>MB2</span></p>
+<p>選擇下平面的三個邊緣</p>
+<p>在“<span>for First Section</span>”的“<span>Continuity</span>”對話框中將選項更改為<span>G2</span>（<span>Curvature</span>）</p>
+<p>選擇剛創建的表面，然後單擊<span>MB2</span>。</p>
+<p>對於“<span>Continuity</span>”的<span>”Last Section”</span>，選擇“<span><span> </span>G2</span>（<span>Curvature</span>）”，然後選擇底部的三個色塊作為參考</p>
+<p>單擊<span>OK</span>退出</p>
+<p>最終的自由曲面應如下所示</p><h2>CH 8  有限元素分析</h2>
 <p><span>第八章 有限元分析</span></p>
 <p>有限元分析（FEA）是有限元法（FEM）的預測結構或流體的響應特性所施加的因素，例如力，壓力，熱，和振動的實際應用。</p>
 <p>可以幫助工程師們有一個更好的了解產品的性能在製造和測試之前。</p>
