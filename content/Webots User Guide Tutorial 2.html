@@ -1,0 +1,256 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cad2019 bg3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>cad2019 bg3</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cad2019 bg3</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='member.html'>member</a><li class='has-children'><a href='week.html'>week</a><ul class='dropdown'><li class='has-children'><a href='w10-12.html'>w10-12</a><ul class='dropdown'><li><a href='Solidwork開發起源.html'>Solidwork開發起源</a><li><a href='NX開發起源.html'>NX開發起源</a><li><a href='Inventor開發起源.html'>Inventor開發起源</a><li><a href='Creo(Pro E)開發起源.html'>Creo(Pro E)開發起源</a><li><a href='各軟體之特點分析與安裝流程.html'>各軟體之特點分析與安裝流程</a></li></ul><li><a href='w13-15.html'>w13-15</a><li><a href='w16-18.html'>w16-18</a></li></ul><li class='has-children'><a href='W17 協同任務.html'>W17 協同任務</a><ul class='dropdown'><li><a href='Building a clean model tutorial.html'>Building a clean model tutorial</a><li><a href='Webots User Guide Tutorial 2.html'>Webots User Guide Tutorial 2</a></li></ul><li class='has-children'><a href='NX教科書整理.html'>NX教科書整理</a><ul class='dropdown'><li><a href='CH 2  入門教程.html'>CH 2  入門教程</a><li><a href='CH 3  平面草圖.html'>CH 3  平面草圖</a><li><a href='CH 4  3D建模.html'>CH 4  3D建模</a><li><a href='CH 5  草圖.html'>CH 5  草圖</a><li><a href='CH 6  組裝模型.html'>CH 6  組裝模型</a><li><a href='CH 7  曲面建模.html'>CH 7  曲面建模</a><li><a href='CH 8  有限元素分析.html'>CH 8  有限元素分析</a><li><a href='CH 9  製造.html'>CH 9  製造</a></li></ul><li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Building a clean model tutorial << <a href='Building a clean model tutorial.html'>Previous</a> <a href='NX教科書整理.html'>Next</a> >> NX教科書整理<br /><h1>Webots User Guide Tutorial 2</h1>
+<p><span style="color: #ff0000;"><em>40723209 吳耕甫</em></span></p>
+<p>First we create a new simulation based。</p>
+<p>首先，創建的模擬創建一個新的模擬。</p>
+<p>We will now delete the RectangleArena node and add a simple floor。</p>
+<p>我們將刪除該<span>rectangleArena</span>節點，並添加一個簡單的地板。</p>
+<p>To define a rigid body, you will have to create a Solid node. Inside this node you will set up different sub-nodes corresponding to the characteristics of the rigid body. The following figure depicts a rigid body and its sub-nodes. The graphical representation of the Solid node is defined by the Shapenodes populating its children list. The collision bounds are defined in its boundingObject field. The graphical representation and the collision shape are often but not necessarily identical. Finally, the physics field defines if the object belongs to the dynamical or to the static environment. All these sub-nodes are optional, but the physics field needs the boundingObject to be defined。</p>
+<p>要定義剛體，您將必須創建一個實體節點。在此節點內，您將根據剛體的特性設置不同的子節點。描繪了剛體及其子節點。實體節點的圖形表示由填充其列表的<span>Shape</span>節點定義children。碰撞範圍在其<span>boundingObject </span>字段中定義。圖形表示和碰撞形狀通常但不一定相同。最後，該physics字段定義對像是屬於動態環境還是屬於靜態環境。所有這些子節點都是可選的，但是physics需要<span>boundingObject </span>定義該字段。</p>
+<p>In the scene tree view, select the last node and press the Add button. In the dialog, open the Bases nodes section and select the Solid node. In the scene tree view, expand the Solid node and select its children field. Add a Shape node to it by using the Add button. Select the appearance field of the Shape node and use the Add button to add a PBRAppearance node.</p>
+<p>在場景樹視圖中，選擇最後一個節點，然後按<span>Add</span>按鈕。在對話框中，打開該<span>Bases nodes</span>部分，然後選擇實體節點。在場景樹視圖中，展開實體節點並選擇其<span>children</span>字段。使用按鈕向其添加一個<span>Shape</span>節點<span>Add</span>。選擇形狀節點的<span>appearance</span>字段，然後使用按鈕添加一個節點。<span>AddPBRAppearance</span>。</p>
+<p>1.Add a Sphere node as the geometry field of the newly created Shape node.</p>
+<p>2.Expand the PBRAppearance node and change its metalness field to 0 and its roughness field to 1.</p>
+<p>3.Add another Sphere node to the boundingObject field of the Solid.</p>
+<p>4.Finally add a Physics node to the physics field of the Solid.</p>
+<p>5.By modifying the translation field of the Solid node, place the ball in front of the robot</p>
+<p>6.Save the simulation.</p>
+<p>1.將球體節點添加為<span>geometry</span>新創建的形狀節點的字段。</p>
+<p>2.展開<span>PBRAppearance</span>節點並將其<span>metalness</span>字段更改為<span>0</span>，並將其<span>roughness</span>字段更改為<span>1</span>。</p>
+<p>3.將另一個<span>Sphere</span>節點添加到<span>Solid</span>的<span>boundingObject</span>字段。</p>
+<p>4.最後，將一個<span>Physics</span>節點添加到<span>Solid</span>的<span>physics</span>字段中。</p>
+<p>5.通過修改實體節點的<span>translation</span>字段，將球放在機器人的前面</p>
+<p>6.保存模擬。</p>
+<p><span style="color: #ff0000;"><em>40723206 王冠驊</em></span></p>
+<p><span style="color: #000000; background-color: #999999;">DEF-USE Mechanism</span></p>
+<p><span style="color: #000000; background-color: #999999;">定義使用機制</span></p>
+<p><span style="color: #808080;">The <strong>DEF-USE mechanism</strong> allows to define a node in one place and to reuse that definition elsewhere in the scene tree. This is useful to avoid the duplication of identical nodes in world files. Moreover, it also allows users to modify several objects at the same time.</span></p>
+<p><span style="color: #808080;"><span>該</span><strong><span><span>DEF-USE機制</span></span></strong><span><span>允許在一個地方定義一個節點，並在場景樹在其他地方重複使用的定義。</span><span>這對於避免在世界文件中復制相同節點很有用。</span><span>此外，它還允許用戶同時修改多個對象。</span></span></span></p>
+<p><span style="color: #808080;"><span><span>The two <a href="https://cyberbotics.com/doc/reference/sphere">Sphere</a><span><span> </span>definitions that we have used earlier to define the ball, are redundant. We will now merge these two<span> </span></span><a href="https://cyberbotics.com/doc/reference/sphere">Spheres</a><span><span> </span>into only once using the DEF-USE mechanism.</span></span></span></span></p>
+<p><span style="color: #808080;"><span><span><span>我們之前用來定義球的兩個</span><a href="https://cyberbotics.com/doc/reference/sphere"><span><span>Sphere</span></span></a><span><span>定義是多餘的。</span><span>現在，我們將</span><span>使用DEF-USE機制</span><span>將這兩個</span></span><a href="https://cyberbotics.com/doc/reference/sphere"><span><span>Sphere</span></span></a><span><span>合併</span><span>為一次。</span></span></span></span></span></p>
+<p>Now, changing the<span> </span><code>radius</code><span> </span>field of the first<span> </span><a href="https://cyberbotics.com/doc/reference/sphere">Sphere</a><span> </span>node also modifies its<span> </span><code>boundingObject</code>.For convenience, the<span> </span><code>boundingObject</code><span> </span>field accepts also the<span> </span><a href="https://cyberbotics.com/doc/reference/shape">Shape</a><span> </span>node (rather than the<span> </span><a href="https://cyberbotics.com/doc/reference/sphere">Sphere</a><span> </span>node directly). It would be also possible to use the same DEF-USE mechanism at the<span> </span><a href="https://cyberbotics.com/doc/reference/shape">Shape</a><span> </span>level as shown in<span> </span><a class="dynamicAnchor" href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#def-use-mechanism-applied-on-the-shape-node-of-a-solid">this figure</a>. For now the greatest benefit is being able to also use this<span> </span><a href="https://cyberbotics.com/doc/reference/shape">Shape</a><span> </span>directly for graphical purposes. Later this mechanism will turn out to be very useful for some sensors.</p>
+<p><span>現在，更改</span><code>radius</code><span>第一個</span><a href="https://cyberbotics.com/doc/reference/sphere"><span>Sphere</span></a><span>節點的字段也會修改其</span><code>boundingObject</code><span>。</span><span><span>為方便起見，該</span></span><code>boundingObject</code><span><span>字段還接受</span></span><a href="https://cyberbotics.com/doc/reference/shape"><span><span>Shape</span></span></a><span><span>節點（而不是</span><span>直接</span><span>接受</span></span><a href="https://cyberbotics.com/doc/reference/sphere"><span><span>Sphere</span></span></a><span><span>節點）。</span><span>也可以在</span></span><a href="https://cyberbotics.com/doc/reference/shape"><span><span>Shape</span></span></a><span><span>級別</span><span>使用相同的DEF-USE機制，</span><span>如圖</span></span><a class="dynamicAnchor" href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#def-use-mechanism-applied-on-the-shape-node-of-a-solid"><span><span>所示</span></span></a><span><span>。</span><span>到目前為止，最大的好處就是也可以</span><span>直接</span><span>將此</span></span><a href="https://cyberbotics.com/doc/reference/shape"><span><span>Shape</span></span></a><span><span>用於圖形目的。</span><span>後來，對於某些傳感器，該機制將變得非常有用。</span></span></p>
+<p><span><span><img alt="" height="227" src="./../images/6.jpg" width="400"/></span></span></p>
+<p><em>DEF-USE mechanism on the Sphere node called BALL_GEOMETRY.</em></p>
+<p><em>Sphere節點上的DEF-USE機制稱為BALL_GEOMETRY。</em></p>
+<p><span><span></span></span></p>
+<p><span style="color: #000000; background-color: #999999;">Add Walls</span></p>
+<p><span style="color: #000000; background-color: #999999;">添加牆</span></p>
+<p>In order to verify your progression, implement by yourself four walls to surround the environment. The walls have to be defined statically to the environment. To understand the difference between static and dynamic, let's take a defined object (the ball) above the ground. If the<span> </span><a href="https://cyberbotics.com/doc/reference/physics">Physics</a><span> </span>node is NULL, it will remain frozen in the air during the simulation (static case). If the<span> </span><code>physics</code><span> </span>field contains a<span> </span><a href="https://cyberbotics.com/doc/reference/physics">Physics</a><span> </span>nodes, it will fall under the effect of gravity (dynamic case).</p>
+<p><span>為了驗證您的進度，請自己實施四堵牆以包圍環境。必鬚根據環境靜態定義牆壁。要了解靜態和動態之間的區別，我們將定義的物體（球）放在地面上方。如果“<span> </span></span><a href="https://cyberbotics.com/doc/reference/physics"><span><span>物理”</span></span></a><span><span>節點為NULL，則在仿真過程中它將保持凍結狀態（靜態情況）。</span><span>如果該</span></span><code>physics</code><span><span>字段包含“<span> </span></span></span><a href="https://cyberbotics.com/doc/reference/physics"><span><span>物理”</span></span></a><span><span>節點，則它將屬於重力作用（動態情況）。</span></span></p>
+<p>Use as much as possible the DEF-USE mechanism at the<span> </span><a href="https://cyberbotics.com/doc/reference/shape">Shape</a><span> </span>level rather than at the Geometry level. Indeed it's more convenient to add an intermediate<span> </span><a href="https://cyberbotics.com/doc/reference/shape">Shape</a><span> </span>node in the<span> </span><code>boundingObject</code><span> </span>field of the<span> </span><a href="https://cyberbotics.com/doc/reference/solid">Solid</a><span> </span>node. The best Geometry primitive to implement the walls is the Box node. Only one<span> </span><a href="https://cyberbotics.com/doc/reference/shape">Shape</a><span> </span>has to be defined for all the walls. The expected result is shown in<span> </span><a class="dynamicAnchor" href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#the-simulation-state-at-the-end-of-this-second-tutorial">this figure</a>.</p>
+<p><span>在</span><a href="https://cyberbotics.com/doc/reference/shape"><span><span>Shape</span></span></a><span><span>級別而不是Geometry級別</span><span>，盡可能使用DEF-USE機制</span><span>。</span><span>實際上</span><span>，在</span><a href="https://cyberbotics.com/doc/reference/solid"><span>實體</span></a><span>節點</span><span>的</span><span>字段中</span><span>添加中間</span></span><a href="https://cyberbotics.com/doc/reference/shape"><span><span>Shape</span></span></a><span><span>節點</span><span>更為方便</span><span>。</span><span>實現牆的最佳幾何原語是Box節點。</span><span>所有牆壁</span><span>僅需</span><span>定義</span><span>一個</span><a href="https://cyberbotics.com/doc/reference/shape"><span>形狀</span></a><span>。</span><span>預期結果如圖</span><a class="dynamicAnchor" href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment#the-simulation-state-at-the-end-of-this-second-tutorial"><span>所示</span></a><span>。</span></span></p>
+<p><span><span></span></span></p>
+<p><span style="color: #000000; background-color: #999999;">Solution: World File</span></p>
+<p><span style="color: #000000; background-color: #999999;">解決方案：世界文件</span></p>
+<p><span style="color: #808080;">To compare your world with the solution, go to your files and find the folder named "my_first_simulation" created in <a class="dynamicLoad" href="https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots" style="color: #808080;">Tutorial 1</a>, then go to the "worlds" folder and open with a text editor the right world. <a href="https://github.com/cyberbotics/webots/blob/master/projects/samples/tutorials/worlds/obstacles.wbt" style="color: #808080;" target="_blank">This solution</a> as the others is located in the <a href="https://github.com/cyberbotics/webots/blob/master/projects/samples/tutorials/worlds/" style="color: #808080;" target="_blank">solution directory</a>.</span></p>
+<p><span>要將您的世界與解決方案進行比較，請轉到文件，找到在</span><a class="dynamicLoad" href="https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots"><span>教程1中</span></a><span>創建的名為“ my_first_simulation”的文件夾，然後轉到“ worlds”文件夾並使用文本編輯器打開正確的世界。<span> </span>與其他</span><a href="https://github.com/cyberbotics/webots/blob/master/projects/samples/tutorials/worlds/obstacles.wbt" target="_blank"><span>解決方案</span></a><span>一樣，<a href="https://github.com/cyberbotics/webots/blob/master/projects/samples/tutorials/worlds/obstacles.wbt" target="_blank">該解決方案</a>位於</span><a href="https://github.com/cyberbotics/webots/blob/master/projects/samples/tutorials/worlds/" target="_blank"><span>solution目錄中</span></a><span>。</span></p>
+<p><span style="color: #808080;"><span><span><img alt="" height="227" src="./../images/7.jpg" width="400"/></span></span></span></p>
+<p><em><span style="color: #808080;">The simulation state at the end of this second tutorial.</span></em></p>
+<p><em><span style="color: #808080;">在第二篇教程結尾處的仿真狀態。</span></em></p>
+<p><span style="color: #000000; background-color: #999999;">Efficiency</span></p>
+<p><span style="color: #000000; background-color: #999999;">效率</span></p>
+<p>The simulation of rigid bodies is computationally expensive. The simulation speed can be increased by minimizing the number of bounding objects, minimizing the constraints between them (more information about the constraints in the next tutorials), and maximizing the<span> </span><code>WorldInfo.basicTimeStep</code><span> </span>field. On each simulation, a<span> </span><strong>trade-off</strong><span> </span>has to be found between simulation speed and realism.</p>
+<p><span>剛體的模擬在計算上是昂貴的。可以通過最小化邊界對象的數量，最小化邊界對象之間的約束（在下一個教程中有關約束的更多信息）以及最大化</span><code>WorldInfo.basicTimeStep</code><span><span>字段</span><span>來提高仿真速度</span><span>。</span><span>在每個模擬中，</span><span>必須在模擬速度和真實性之間找到</span><span>一個</span></span><strong><span><span>折衷</span></span></strong><span><span>。</span></span></p>
+<p><span style="color: #000000; background-color: #999999;">Conclusion</span></p>
+<p><span style="color: #000000; background-color: #999999;">結論</span></p>
+<p><span style="color: #808080;">At the end of this tutorial, you are able to create simple environments based on rigid bodies. You are able to add nodes from the scene tree view and to modify their fields. You have become acquainted with the <a href="https://cyberbotics.com/doc/reference/solid" style="color: #808080;">Solid</a>, <a href="https://cyberbotics.com/doc/reference/physics" style="color: #808080;">Physics</a>, <a href="https://cyberbotics.com/doc/reference/shape" style="color: #808080;">Shape</a>, <a href="https://cyberbotics.com/doc/reference/sphere" style="color: #808080;">Sphere</a> and <a href="https://cyberbotics.com/doc/reference/box" style="color: #808080;">Box</a> nodes. You also saw the DEF-USE mechanism that allows to reduce node redundancy of the scene tree.</span></p>
+<p><span style="color: #808080;"><span>在本教程的最後，您將能夠基於剛體創建簡單的環境。您可以從場景樹視圖添加節點並修改其字段。您已經熟悉了</span><a href="https://cyberbotics.com/doc/reference/solid"><span><span>Solid</span></span></a><span><span>，</span></span><a href="https://cyberbotics.com/doc/reference/physics"><span><span>Physics</span></span></a><span><span>，</span></span><a href="https://cyberbotics.com/doc/reference/shape"><span><span>Shape</span></span></a><span><span>，</span></span><a href="https://cyberbotics.com/doc/reference/sphere"><span><span>Sphere</span></span></a><span><span>和</span></span><a href="https://cyberbotics.com/doc/reference/box"><span><span>Box</span></span></a><span><span>節點。</span><span>您還看到了DEF-USE機制，該機制可減少場景樹的節點冗餘。</span></span></span></p>
+<p><span style="color: #808080;"><span><span></span></span></span></p><br />Building a clean model tutorial << <a href='Building a clean model tutorial.html'>Previous</a> <a href='NX教科書整理.html'>Next</a> >> NX教科書整理</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        

@@ -1,0 +1,424 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cad2019 bg3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>cad2019 bg3</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cad2019 bg3</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='member.html'>member</a><li class='has-children'><a href='week.html'>week</a><ul class='dropdown'><li class='has-children'><a href='w10-12.html'>w10-12</a><ul class='dropdown'><li><a href='Solidwork開發起源.html'>Solidwork開發起源</a><li><a href='NX開發起源.html'>NX開發起源</a><li><a href='Inventor開發起源.html'>Inventor開發起源</a><li><a href='Creo(Pro E)開發起源.html'>Creo(Pro E)開發起源</a><li><a href='各軟體之特點分析與安裝流程.html'>各軟體之特點分析與安裝流程</a></li></ul><li><a href='w13-15.html'>w13-15</a><li><a href='w16-18.html'>w16-18</a></li></ul><li class='has-children'><a href='W17 協同任務.html'>W17 協同任務</a><ul class='dropdown'><li><a href='Building a clean model tutorial.html'>Building a clean model tutorial</a><li><a href='Webots User Guide Tutorial 2.html'>Webots User Guide Tutorial 2</a></li></ul><li class='has-children'><a href='NX教科書整理.html'>NX教科書整理</a><ul class='dropdown'><li><a href='CH 2  入門教程.html'>CH 2  入門教程</a><li><a href='CH 3  平面草圖.html'>CH 3  平面草圖</a><li><a href='CH 4  3D建模.html'>CH 4  3D建模</a><li><a href='CH 5  草圖.html'>CH 5  草圖</a><li><a href='CH 6  組裝模型.html'>CH 6  組裝模型</a><li><a href='CH 7  曲面建模.html'>CH 7  曲面建模</a><li><a href='CH 8  有限元素分析.html'>CH 8  有限元素分析</a><li><a href='CH 9  製造.html'>CH 9  製造</a></li></ul><li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">W17 協同任務 << <a href='W17 協同任務.html'>Previous</a> <a href='Webots User Guide Tutorial 2.html'>Next</a> >> Webots User Guide Tutorial 2<br /><h1>Building a clean model tutorial</h1>
+<h4><span>構建乾淨的模型教程</span></h4>
+<p><span style="color: #ff0000;"><em>40723203  林家宜</em></span></p>
+<p><span style="color: #000000; background-color: #999999;">Building the visible shapes</span></p>
+<p><span style="color: #000000; background-color: #999999;">建立可見的形狀</span></p>
+<p> We could now directly create primitive shapes in CoppeliaSim with [Menu bar --&gt; Add --&gt; Primitive shape --&gt; ...]. When doing this, we have the option to create pure shapes, or regular shapes.</p>
+<p>可使用<span>[</span>菜單欄<span>-&gt;</span>添加<span>-&gt;</span>基本形狀<span>-&gt; ...]</span>在<span>CoppeliaSim</span>中直接創建基本形狀。</p>
+<p> CoppeliaSim supports currently following CAD data formats: OBJ, STL, DXF, 3DS (Windows only), and Collada. URDF is also supported</p>
+<p>CoppeliaSim</p>
+<p>當前支持以下<span>CAD</span>數據格式：<span>OBJ</span>，<span>STL</span>，<span>DXF</span>，<span>3DS</span>（僅<span>Windows</span>）和<span>Collada</span>。還支持<span>URDF</span></p>
+<p>*Automatic mesh division:</p>
+<p>*自動網格劃分：</p>
+<p>The function can be accessed with [Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Divide selected shapes]. Sometimes, a mesh will be divided more than expected. In that case, simply merge elements that logically belong together (i.e. that will have the same visual attributes and that are part of the same link) back into one single shape ([Menu bar --&gt; Edit -&gt; Grouping/Merging --&gt; Merge selected shapes]).</p>
+<p>可以通過<span>[</span>菜單欄<span>-&gt;</span>編輯<span>-&gt;</span>分組<span>/</span>合併<span>-&gt;</span>分割所選形狀<span>]</span>訪問該功能。有時，網格劃分會超出預期。在這種情況下，只需將邏輯上屬於一起的元素（即，具有相同的視覺屬性並且屬於同一鏈接的一部分）合併回一個單一形狀（<span>[</span>菜單欄<span>-&gt;</span>編輯<span>-&gt;</span>分組<span>/</span>合併<span>-&gt;</span>合併選定的形狀<span>]</span>）。</p>
+<p>*Extract the convex hull:</p>
+<p>*提取凸包：</p>
+<p>allows to simplify the mesh by transforming it into a convex hull. The function can be accessed with [Menu bar --&gt; Edit --&gt; Morph selection into convex shapes].</p>
+<p>通過將其轉換為凸包來簡化網格。可以通過[菜單欄-&gt;編輯-&gt;將選擇變形為凸形]來訪問該功能。</p>
+<p>*Decimate the mesh:</p>
+<p>抽取網格：</p>
+<p>allows to reduce the number of triangles contained in the mesh. The function can be accessed with [Menu bar --&gt; Edit --&gt; Decimate selected shape...].</p>
+<p>減少網格中包含的三角形數量。可以通過[菜單欄-&gt;編輯-&gt;縮小所選形狀...]訪問該功能。</p>
+<p><span style="color: #ff0000;"><em>40723241  葉承叡</em></span></p>
+<p>*Remove the inside of the mesh: </p>
+<p>刪除網格的內部：</p>
+<p> allows to simplify the mesh by removing its inside. This function is based on <a href="http://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">vision sensors</a> and might give more or less satisfying results depending on the selected settings. The function can be accessed with [Menu bar --&gt; Edit --&gt; Extract inside of selected shape].</p>
+<p>允許通過刪除其內部來簡化網格。此功能基於<a href="http://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">視覺傳感器</a>，根據所選設置可能會或多或少地令人滿意。可以通過[菜單欄-&gt;編輯-&gt;提取選定形狀的內部]訪問該功能。</p>
+<p>*Automatic mesh division:</p>
+<p>*自動網格劃分：</p>
+<p>this function, which was already described in previous section, will inspect the shape and generate a new shape for all elements that are not linked together via a common edge. This does not always work, but is always worth a try. The function can be accessed with [Menu bar --&gt; Edit --&gt; Grouping/merging --&gt; Divide selected shapes].</p>
+<p>此功能已在上一節中進行了描述，它將檢查形狀並為未通過公共邊鏈接在一起的所有元素生成新形狀。這並不總是有效，但總是值得嘗試的。可以通過[菜單欄-&gt;編輯-&gt;分組/合併-&gt;分割所選形狀]訪問該功能。</p>
+<p>*Manual mesh division:</p>
+<p>手動網格劃分：</p>
+<p>via the the <a href="http://www.coppeliarobotics.com/helpFiles/en/triangleEditMode.htm">triangle edit mode</a>, you can manually select the triangles than logically belong together, then click Extract shape. This will generate a new shape in the scene. Delete the selected triangles after that operation.</p>
+<p>通過<a href="http://www.coppeliarobotics.com/helpFiles/en/triangleEditMode.htm">三角形編輯模式</a>，您可以手動選擇邏輯上不屬於邏輯的三角形，然後單擊“ 提取形狀”。這將在場景中生成新形狀。完成該操作後，刪除選定的三角形。</p>
+<p>we can group the shapes that are part of the same link with [Menu bar --&gt; Edit --&gt; Grouping/merging -&gt; Group selected shapes]. We end up with shapes: the base of the robot (or base of the robot's hierarchy tree), and mobile links.</p>
+<p>我們可以使用[菜單欄-&gt;編輯-&gt;分組/合併-&gt;分組所選形狀]對屬於同一鏈接的形狀進行分組。我們最終得到形狀：機器人的基礎（或機器人的層次結構樹的基礎）和移動鏈接。</p>
+<p>When a shape is created or modified, CoppeliaSim will automatically set its reference frame position and orientation. A shape's reference frame will always be positioned at the shape's geometric center. The frame orientation will be selected so that the shape's bounding box remains as small as possible. This does not always look nice, but we can always reorient a shape's reference frame at any time. We now reorient the reference frames of all our created shapes with [Menu bar --&gt; Edit --&gt; Reorient bounding box --&gt; with reference frame of world]. You have more options to reorient a reference frame in the <a href="http://www.coppeliarobotics.com/helpFiles/en/geometryDialog.htm">shape geometry dialog</a>.</p>
+<p>創建或修改形狀時，CoppeliaSim將自動設置其參考框架的位置和方向。形狀的參考框架將始終位於形狀的幾何中心。將選擇框架方向，以便形狀的邊界框保持盡可能小。這並不總是看起來不錯，但是我們隨時可以隨時調整形狀的參考框架的方向。現在，我們可以使用[菜單欄-&gt;編輯-&gt;重定向邊界框-&gt;使用世界參考框架]重新調整所有已創建形狀的參考框架。您可以在<a href="http://www.coppeliarobotics.com/helpFiles/en/geometryDialog.htm">形狀幾何對話框中</a>有更多選項來重新定向參考系。</p>
+<p><span style="background-color: #ffffff; color: #ff0000;"><em>40739214 蔡伃捷</em></span></p>
+<p><span style="background-color: #999999;"></span></p>
+<p><span style="background-color: #999999; color: #000000;">Building the joints</span></p>
+<p><span style="background-color: #999999; color: #000000;">建立關節</span></p>
+<p>Now we will take care of the joints/motors. Most of the time, we know the exact position and orientation of each of the joints. In that case, we simply add the joints with [Menu bar --&gt; Add --&gt; Joints --&gt; ...], then we can change their position and orientation with the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/positionDialog.htm">position dialog</a></span> and <span><a href="http://www.coppeliarobotics.com/helpFiles/en/orientationDialog.htm">orientation dialog</a></span>. In other situations, we only have the Denavit-Hartenberg (i.e. D-H) parameters. In that case, we can build our joints via the tool model located in <em>Models/tools/Denavit-Hartenberg joint creator.ttm</em>, in the model browser.</p>
+<p>現在，我們將照顧關節/馬達。大多數時候，我們知道每個關節的確切位置和方向。在這種情況下，我們只需使用[菜單欄-&gt;添加-&gt;關節-&gt; ...]添加關節，然後可以通過<a href="http://www.coppeliarobotics.com/helpFiles/en/positionDialog.htm"><span>位置對話框</span></a>和<span><a href="http://www.coppeliarobotics.com/helpFiles/en/orientationDialog.htm"><span>方向對話框</span></a></span>更改它們的位置和方向。在其他情況下，我們只有Denavit-Hartenberg（即DH）參數。在這種情況下，我們可以通過<em>Models / tools / Denavit-Hartenberg</em><em>聯合</em><em>creator.ttm</em><em>中</em>的工具模型來構建關節，在模型瀏覽器中。</p>
+<p> Othertimes, we have no information about the joint locations and orientations. Then, we need to extract them from the imported mesh. Let's suppose this is our case. Instead of working on the modified, more approximate mesh, we open a new scene, and import the original CAD data again.</p>
+<p>有時，我們沒有關於關節位置和方向的信息。然後，我們需要從導入的網格中提取它們。讓我們假設這是我們的情況。無需處理修改過的，更近似的網格，而是打開一個新場景，然後再次導入原始CAD數據。</p>
+<p>Most of the time, we can extract meshes or primitive shapes from the original mesh. The first step is to subdivide the original mesh. If that does not work, we do it via the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/triangleEditMode.htm">triangle edit mode</a></span>. Let's suppose that we could divide the original mesh. We now have smaller objects that we can inspect. We are looking for revolute shapes, that could be used as reference to create joints at their locations, with the same orientation.</p>
+<p> 大多數時候，我們可以從原始網格中提取網格或基本形狀。第一步是細分原始網格。如果這不起作用，我們通過<a href="http://www.coppeliarobotics.com/helpFiles/en/triangleEditMode.htm"><span>三角形編輯模式進行</span></a>。假設我們可以劃分原始網格。現在，我們可以檢查較小的對象。我們正在尋找旋轉形狀，可以用作在其位置以相同方向創建關節的參考。</p>
+<p>First, remove all objects that are not needed. It is sometimes also useful to work across several opened scenes, for easier visualization/manipulation. In our case, we focus first on the base of the robot: it contains a cylinder that has the correct position for the first joint. In the triangle edit mode, we have:</p>
+<p>首先，刪除所有不需要的對象。有時在多個打開的場景中工作也很有用，以便於可視化/操作。在我們的案例中，我們首先關注機器人的基座：它包含一個圓柱體，該圓柱體的第一個關節的位置正確。在三角形編輯模式下，我們有：</p>
+<p><img alt="" height="367" src="./../images/1.jpg" width="450"/></p>
+<p>[Robot base: normal and triangle edit mode visualization]</p>
+<p>[機器人基礎：法線和三角形編輯模式可視化]</p>
+<p>We change the camera view via the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">page selector</a></span> <span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">toolbar button</a></span>, in order to look at the object from the side. The <span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">fit-to-view toolbar button</a></span> can come in handy to correctly frame the object in edition. Then we switch to the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/vertexEditMode.htm">vertex edit mode</a></span> and select all vertices that belong to the upper disc. Remember that by switching some <span><a href="http://www.coppeliarobotics.com/helpFiles/en/layerSelectionDialog.htm">layers</a></span> on/off, we can hide other objects in the scene. Then we switch back to the triangle edit mode:</p>
+<p>我們通過<a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars"><span>頁面選擇器</span></a> <span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars"><span>工具欄按鈕</span></a></span>更改相機視圖，以便從側面查看對象。所述<span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars"><span>擬合到視圖工具欄按鈕</span></a></span>可以派上用場正確幀在版的對象。然後，我們切換到<span><a href="http://www.coppeliarobotics.com/helpFiles/en/vertexEditMode.htm"><span>頂點編輯模式，</span></a></span>並選擇屬於上光盤的所有頂點。請記住，通過打開/關閉某些<a href="http://www.coppeliarobotics.com/helpFiles/en/layerSelectionDialog.htm"><span>層</span></a>，我們可以隱藏場景中的其他對象。然後我們切換回三角形編輯模式：</p>
+<p><img alt="" height="370" src="./../images/2.jpg" width="600"/></p>
+<p>[Selected upper disc, vertex edit mode (1 &amp; 2), triangle edit mode (3)]</p>
+<p>[選擇的上光盤，頂點編輯模式（1和2），三角形編輯模式（3）]</p>
+<p>Now we click <strong>Extract cylinder</strong> (<strong>Extract shape</strong> would also work in that case), this just created a cylinder shape in the scene, based on the selected triangles. We leave the edit mode and discard the changes. Now we add a revolute joint with [Menu bar --&gt; Add --&gt; Joint --&gt; Revolute], keep it selected, then control-select the extracted cylinder shape. In the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/positionDialog.htm">position dialog</a></span>, on the <strong>position</strong> tab, we click <strong>Apply to selection</strong>: this basically copies the x/y/z position of the cylinder to the joint.</p>
+<p>現在我們單擊“ <strong>提取圓柱體</strong><strong>”</strong>（在這種情況下，“ <strong>提取形狀</strong><strong>”</strong>也將起作用），這只是根據選定的三角形在場景中創建了圓柱體形狀。我們離開編輯模式並放棄更改。現在，通過[菜單欄-&gt;添加-&gt;關節-&gt;旋轉]添加旋轉關節，使其保持選中狀態，然後控制選擇提取的圓柱形狀。在<a href="http://www.coppeliarobotics.com/helpFiles/en/positionDialog.htm"><span>位置<span>對話框</span></span></a>的“ <strong>位置</strong><strong>”</strong>選項卡上，單擊“ <strong>應用於選擇</strong><strong>”</strong>：這基本上將圓柱體的x / y / z位置複製到關節。</p>
+<p> Both positions are now identical. In the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/orientationDialog.htm">orientation dialog</a></span>, on the <strong>orientation</strong> tab, we also click <strong>Apply to selection</strong>: the orientation of our selected objects is now also the same. Sometimes, we will need to additionally rotate the joint about 90/180 degrees around its own reference frame in order to obtain the correct orientation or rotation direction. We could do that on the <strong>rotation</strong> tab of that dialog if needed (in that case, do not forget to click the <strong>Own frame</strong> button). In a similar way we could also shift the joint along its axis, or even do more complex operations. This is what we have:</p>
+<p>現在兩個位置都相同。在“ <span><a href="http://www.coppeliarobotics.com/helpFiles/en/orientationDialog.htm"><span>方向</span>”<span>對話框</span></a></span>的“ <strong>方向</strong><strong>”</strong>選項卡上，我們還單擊“ <strong>應用於選擇</strong><strong>”</strong>：現在，所選對象的方向也相同。有時，我們將需要圍繞其自身的參考框架額外旋轉關節90/180度，以獲得正確的方向或旋轉方向。如果需要，我們可以在該對話框的“ <strong>旋轉</strong><strong>”</strong>選項卡上執行此操作（在這種情況下，請不要忘記單擊“ <strong>自有框架</strong><strong>”</strong>按鈕）。同樣，我們也可以沿關節的軸移動關節，甚至進行更複雜的操作。這就是我們所擁有的：</p>
+<p><img alt="" height="406" src="./../images/3.jpg" width="400"/></p>
+<p>[Joint in correct location, with the correct orientation]</p>
+<p>[在正確的位置，以正確的方向接合]</p>
+<p>Now we copy the joint back into our original scene, and save it (do not forget to save your work on a regular basis! The undo/redo function is useful, but doesn't protect you against other mishaps). We repeat above procedure for all the joints in our robot, then rename them. We also make all joints a little bit longer in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/jointProperties.htm">joint properties</a></span>, in order to see them all. By defaut, joints will be assigned to visibility layer 2, but can be changed in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm">object common properties</a></span>. We assign now all joints to visibility layer 10, then temporarily <span><a href="http://www.coppeliarobotics.com/helpFiles/en/layerSelectionDialog.htm">enable visibility layer 10 for the scene</a></span> to also visualize those joints (by default, only visibility layers 1-8 are activated for the scene). This is what we have (the model <em>ResizableFloor_5_25</em> was temporarily made invisible in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/modelDialog.htm">model properties dialog</a></span>):</p>
+<p>現在，我們將關節複製回到原始場景中，並保存它（不要忘記定期保存您的工作！撤消/重做功能很有用，但不能保護您免受其他不幸的影響）。我們對機器人中的所有關節重複上述過程，然後重命名它們。我們還將使所有關節的<a href="http://www.coppeliarobotics.com/helpFiles/en/jointProperties.htm"><span>關節屬性</span></a>稍長一些，以便查看所有<span><a href="http://www.coppeliarobotics.com/helpFiles/en/jointProperties.htm"><span>關節</span></a></span>。通過默認，關節將分配給可見性層2，但可以在<a href="http://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm"><span>對象的公共屬性中</span></a>進行更改。現在，我們將所有關節分配給可見性層10，然後<a href="http://www.coppeliarobotics.com/helpFiles/en/layerSelectionDialog.htm"><span>為場景</span></a>臨時<span><a href="http://www.coppeliarobotics.com/helpFiles/en/layerSelectionDialog.htm"><span>啟用可見性層</span>10<span>，</span></a></span>以使這些關節也可視化（默認情況下，僅激活場景的可見性層1-8）。這就是我們所擁有的（模型<em>ResizableFloor_5_25</em>在<a href="http://www.coppeliarobotics.com/helpFiles/en/modelDialog.htm"><span>模型屬性對話框中</span></a>暫時不可見）：</p>
+<p><img alt="" height="519" src="./../images/4.jpg" width="656"/></p>
+<p>[Joints in correct configuration]</p>
+<p>[接頭配置正確]</p>
+<p>At this point, we could start to build the model hierarchy and finish the model definition. But if we want opur robot to be <span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm">dynamically enabled</a></span>, then there is an additional intermediate step:</p>
+<p>至此，我們可以開始構建模型層次結構並完成模型定義。但是，如果我們希望<a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm"><span>動態啟用</span></a> opur機器人，則還有一個額外的中間步驟：</p>
+<p><em><span style="color: #ff0000;">40723238 黃語晨</span></em></p>
+<p><span style="color: #000000; background-color: #999999;">Building the dynamic shapes</span></p>
+<p><span style="color: #000000; background-color: #999999;">建立動態形狀</span></p>
+<p><span>If we want our robot to be <u>dynamically enabled</u>, i.e. react to collisions, fall, etc., then we need to create/configure the shapes appropriately: a shape can be:</span></p>
+<p>如果我們希望<span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm"><span>動態啟用</span></a></span>機器人，即對碰撞，跌落等做出反應，那麼我們需要適當地創建<span>/</span>配置形狀：</p>
+<ul>
+<li><strong>dynamic or static:</strong>a dynamic (or non-static) shape will fall and be influences by external forces/torques. A static (or non-dynamic) shape on the other hand, will stay in place, or follow the movement of its parent in the scene hierarchy.</li>
+<li><strong>respondable or non-respondable</strong>: a respondable shape will cause a collision reaction with other respondable shapes. They (and/or) their collider, will be influenced in their movement if they are dynamic. On the other hand, non-respondable shapes will not compute a collision response if they collide with other shapes.</li>
+<li><strong>動態或靜態：</strong>動態（或非靜態）形狀會掉落並受到外力<span>/</span>扭矩的影響。另一方面，靜態（或非動態）形狀將保持不變，或跟隨其父級在場景層次中的移動。</li>
+<li><span> </span><strong>可響應或不可響應</strong>：可響應形狀會引起與其他可響應形狀的碰撞反應。如果它們是動態的，它們（和<span>/</span>或它們的對撞機）的運動將受到影響。另一方面，不負責任的形狀如果與其他形狀發生碰撞，則不會計算碰撞響應。</li>
+</ul>
+<p>Above two points are illustrated <span>here. Respondable shapes should be as simple as possible, in order to allow for a fast and stable simulation. A physics engine will be able to simulate following 5 types of shapes with various degrees of speed and stability:</span></p>
+<p>以上兩點都說明<span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#staticAndRespondable"><span>這裡</span></a></span>。負責任的形狀應盡量簡單，以實現快速穩定的仿真。物理引擎將能夠以不同的速度和穩定性模擬以下5種類型的形狀：</p>
+<ul>
+<li><strong><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#pureShapes">Pure shapes</a>:</strong>a pure shape will be stable and handled very efficiently by the physics engine. The draw-back is that pure shapes are limited in geometry: mostly cuboids, cylinders and spheres. If possible, use those for items that are in contact with other items for a longer time (e.g. the feet of a humanoid robot, the base of a serial manipulator, the fingers of a gripper, etc.). Pure shapes can be created with [Menu bar --&gt; Add --&gt; Primitive shape].</li>
+<li><span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#pureShapes"><strong><span>純形狀</span></strong></a></span><strong>：</strong>純形狀將穩定並由物理引擎非常有效地處理。缺點是純形狀的幾何形狀受到限制：主要是長方體，圓柱體和球體。如果可能的話，將它們用於與其他物品接觸時間較長的物品（例如，人形機器人的腳，串行操縱器的底座，抓手的手指等）。可以使用<span>[Menu bar --&gt; Add --&gt; Primitive shape]</span></li>
+<li><strong><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#pureShapes">Pure compound shapes</a>:</strong>a pure compound shape is a grouping of several pure shapes. It performs almost as well as pure shapes and shares similar properties. Pure compound shapes can be generated by grouping several pure shapes [Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Group selected shapes].</li>
+<li><span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#pureShapes"><strong><span>純複合形狀</span></strong></a></span><strong>：</strong>純複合形狀是幾個純形狀的組合。它的性能幾乎與純形狀一樣，並具有相似的特性。可以通過對幾個純形狀進行分組來生成純複合形狀<span>[Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Group selected shapes]</span>。</li>
+<li><strong><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#convexShapes">Convex shapes</a></strong>: a convex shape will be a little bit less stable and take a little bit more computation time when handled by the physics engine. It allows for a more general geometry (only requirement: it need to be convex) than pure shapes. If possible, use convex shapes for items that are sporadically in contact with other items (e.g. the various links of a robot). Convex shapes can be generated with [Menu bar --&gt; Add --&gt; Convex hull of selection] or with [Menu bar --&gt; Edit --&gt; Morph selection into convex shapes].</li>
+<li><span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#convexShapes"><strong><span>凹凸形狀</span></strong></a></span>：凸起的形狀會有點不太穩定，並採取一點點計算時間時通過物理引擎來處理。與純形狀相比，它允許使用更通用的幾何形狀（僅要求：它必須是凸形的）。如果可能，將凸形用於偶爾與其他物品接觸的物品（例如，機器人的各個鏈接）。可以使用<span>[Menu bar --&gt; Add --&gt; Convex hull of selection]</span>或<span>[Menu bar --&gt; Edit --&gt; Morph selection into convex shapes]</span>生成凸形。</li>
+</ul>
+<ul>
+<li><strong><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#convexShapes">Compound convex shapes, or convex decomposed shapes</a></strong>: a convex decomposed shape is a grouping of several convex shapes. It performs almost as well as convex shapes and shares similar properties. Convex decomposed shapes can be generated by grouping several convex shapes [Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Group selected shapes], with [Menu bar --&gt; Add --&gt; Convex decomposition of selection...], or with [Menu bar --&gt; Edit --&gt; Morph selection into its convex decomposition...].</li>
+</ul>
+<p>  <span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#convexShapes"><strong><span>複合凸形狀或凸分解形狀</span></strong></a></span>：凸分解形狀是幾個凸形狀的組合。它的性能幾乎與凸形相同，並具有相似的特性。可以通過將多個凸形分組<span>[Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Group selected shapes]</span>，並使用<span>[Menu bar --&gt; Add --&gt; Convex decomposition of selection...]</span>來生成凸分解形狀。或使用</p>
+<p>[Menu bar --&gt; Edit --&gt; Morph selection into its convex decomposition...]。</p>
+<ul>
+<li><strong>Random shapes</strong>: a random shape is a shape that is not convex nor pure. It generally has poor performance (calculation speed and stability). Avoid using random shapes as much as possible.</li>
+<li><strong>隨機形狀</strong>：較差勁。應盡量避免使用隨機形狀。</li>
+</ul>
+<p> So the order of preference would be: pure shapes, pure compound shapes, convex shapes, compound convex shapes, and finally random shapes. Make sure to also read <span><a href="http://www.coppeliarobotics.com/helpFiles/en/shapes.htm">this page</a></span>. In case of the robot we want to build, we will make the base of the robot as a pure cylinder, and the other links as convex or convex decomposed shapes.</p>
+<p>因此，優先順序為：純形狀，純複合形狀，凸形，複合凸形，最後是隨機形狀。確保還閱讀<span><a href="http://www.coppeliarobotics.com/helpFiles/en/shapes.htm"><span>此頁面</span></a></span>。對於要構建的機器人，我們將其基座設為純圓柱體，將其他鏈接設為凸形或凸形分解形狀。</p>
+<p>We could use the dynamically enabled shapes also as the visible parts of the robot, but that would probably not look good enough. So instead, we will build for each visible shape we have created in <span><a href="http://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm#visibleShapes">the first part of the tutorial</a></span> a dynamically enabled counterpart, which we will keep hidden: the hidden part will represent the dynamic model and be exclusively used by the physics engine, while the visible part will be used for visualization, but also for <span><a href="http://www.coppeliarobotics.com/helpFiles/en/distanceCalculation.htm">minimum distance calculations</a></span>, <span><a href="http://www.coppeliarobotics.com/helpFiles/en/proximitySensors.htm">proximity sensor detections</a></span>, etc.</p>
+<p>我們也可以將動態啟用的形狀用作機器人的可見部分，但是看起來可能不夠好。因此，相反，我們將為在<span><a href="http://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm#visibleShapes"><span>本教程第一部分中</span></a></span>創建的每個可見形狀構建一個動態啟用的副本，該副本將保持隱藏狀態：隱藏部分將代表動態模型，並由物理引擎專用，而可見部分將用於可視化，還用於<span><a href="http://www.coppeliarobotics.com/helpFiles/en/distanceCalculation.htm"><span>最小距離計算</span></a></span>，<span><a href="http://www.coppeliarobotics.com/helpFiles/en/proximitySensors.htm"><span>接近傳感器檢測</span></a></span>等。</p>
+<p>We select object <em>robot</em>, copy-and-paste it into a new scene (in order to keep the original model intact) and start the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/triangleEditMode.htm">triangle edit mode</a></span>. If object <em>robot</em> was a compound shape, we would first have had to ungroup it ([Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Ungroup selected shapes]) then merge the individual shapes ([Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Merge selected shapes]) before being able to start the triangle edit mode. Now we select the few triangles that represent the power cable, and erase them. Then we select all triangles in that shape, and click Extract cylinder. We can now leave the edit mode and we have our base object represented as a pure cylinder:</p>
+<p>我們選擇對像<em>機器人</em>，將其複制並粘貼到新場景中（以保持原始模型不變），然後啟動三角形編輯模式。如果對像<em>機器人</em>是複合形狀，我們首先必須將其取消組合（[Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Ungroup selected shapes]），然後合併各個形狀（[Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Merge selected shapes]）。現在，我們選擇代表電源線的幾個三角形，並將其刪除。然後，選擇該形狀中的所有三角形，然後單擊“提取圓柱體”。現在我們可以離開編輯模式，我們的基礎對象表示為純圓柱體：</p>
+<p><img alt="" height="273" src="./../images/5.png" width="651"/></p>
+<p>[純圓柱體生成過程，在三角形編輯模式下]</p>
+<p><em><span style="color: #ff0000;">40723233 陳謙諭</span></em></p>
+<p><span>We rename the new shape (with a double-click on its name in the <a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a>) as <em>robot_dyn</em></span></p>
+<p><span>我們將新形狀（在</span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy"><span>場景層次結構中</span></a><span>雙擊其名稱）重命名為</span><em><span>robot_dyn</span></em></p>
+<p><span>assign it to visibility layer 9,</span></p>
+<p><span>將其分配給可見性層9，</span></p>
+<p><span>then copy it to the original scene.</span></p>
+<p><span>然後將其複製到原始場景。</span></p>
+<p><span>The rest of the links will be modelled as convex shapes, or compound convex shapes. We now select the first mobile link (i.e. object <em>robot_link1</em><span>)</span></span></p>
+<p><span>其餘鏈接將建模為凸形或複合凸形。現在，我們選擇第一個移動鏈接（即對象</span><em><span>robot_link1</span></em><span>）</span></p>
+<p><span>We rename it to <em>robot_link_dyn1</em><span><span> </span>and assign it to visibility layer 9.</span></span></p>
+<p><span>並使用[菜單欄-&gt;添加-&gt;選擇的凸包]從中生成凸形。我們將其重命名為</span><em><span>robot_link_dyn1</span></em><span>並將其分配給可見性層9。</span></p>
+<p><span>When extracting the convex hull doesn't retain enough details of the original shape,</span></p>
+<p><span>當提取凸包沒有保留足夠的原始形狀細節時，</span></p>
+<p><span>then you could still manually extract several convex hulls from its composing elements</span></p>
+<p><span>您仍然可以從其組成元素中手動提取多個凸包，</span></p>
+<p><span> then group all the convex hulls with [Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Group selected shapes].</span></p>
+<p><span>如果這似乎有問題或很耗時，則可以使用[菜單欄-&gt;添加-&gt;選擇的凸分解...]自動提取凸分解的形狀：</span></p>
+<p><span>If that appears to be problematic or time consuming, then you can automatically extract a convex decomposed shape with [Menu bar --&gt; Add --&gt; Convex decomposition of selection...]:</span></p>
+<p><span>如果這似乎有問題或很耗時，則可以使用[菜單欄-&gt;添加-&gt;選擇的凸分解...]自動提取凸分解的形狀：</span></p>
+<p align="center"><img src="http://www.coppeliarobotics.com/helpFiles/en/images/modelTut16.jpg"/></p>
+<p class="imageLabel"><span><span>[Original shape, and convex shape pendant]</span></span></p>
+<p class="imageLabel"><span><span>[原始形狀和凸形吊墜]</span></span></p>
+<p><span> </span></p>
+<p align="center"><img src="http://www.coppeliarobotics.com/helpFiles/en/images/modelTut17.jpg"/></p>
+<p class="imageLabel"><span><span>[Original shape, and convex decomposed shape pendant]</span></span></p>
+<p class="imageLabel"><span><span>[原始形狀和凸形分解形狀吊墜]</span></span></p>
+<p><span> </span></p>
+<p><span><span>We now repeat the same procedure for all remaining robot links.</span></span></p>
+<p><span><span>現在，我們對所有剩餘的機器人鏈接重複相同的過程。</span></span></p>
+<p><span><span>Once that is done, we attach each visible shape to its corresponding invisible dynamic pendant.</span></span></p>
+<p><span><span>完成後，我們將每個可見的形狀附加到其相應的不可見的動態吊墜上。</span></span></p>
+<p><span><span>We do this by selecting first the visible shape, then via control-click selecting its dynamic pendant then [Menu bar --&gt; Edit --&gt; Make last selected object parent].</span></span></p>
+<p><span><span>為此，我們先選擇可見的形狀，然後按住Control鍵並單擊以選擇其動態吊墜，然後選擇[菜單欄-&gt;編輯-&gt;將最後選擇的對象設為父對象]。</span></span></p>
+<p><span><span>The same result can be achieved by dragging the visible shape onto its dynamic pendant in the <a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a><span>:</span></span></span></p>
+<p><span><span>通過將可見形狀拖動到</span></span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy"><span><span>場景層次</span></span></a><span><span>中的動態吊墜上，可以達到相同的結果</span><span>：</span></span></p>
+<p align="center"><img src="http://www.coppeliarobotics.com/helpFiles/en/images/modelTut18.jpg"/></p>
+<p class="imageLabel"><span><span>[Visible shapes attached to their dynamic pendants]</span></span></p>
+<p class="imageLabel"><span><span>[可見的形狀附加到動態吊墜上]</span></span></p>
+<p><span> </span></p>
+<p><span><span>We still need to take care of a few things:</span></span></p>
+<p><span><span>我們仍然需要注意一些事項：</span></span></p>
+<p>first, since we want the dynamic shapes only visible to the physics engine, but not to the other calculation modules,</p>
+<p><span>首先，由於我們希望動態形狀僅對物理引擎可見，而對其他計算模塊不可見</span><span>，</span></p>
+<p>we uncheck all <strong>object special properties</strong><span><span> </span>for the dynamic shapes, in the<span> </span></span><a href="http://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm">object common properties</a><span>.</span></p>
+<p><span><span>因此在</span><a href="http://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm"><span>對象通用屬性中</span></a><span>取消選中</span><span>動態形狀的</span><span>所有</span></span><strong><span><span>對象特殊屬性</span></span></strong><span><span>。</span></span></p>
+<p><span><span>Then, we still have to configure the dynamic shapes as <em>dynamic</em><span><span> </span>and<span> </span></span><em>respondable</em><span>.</span></span></span></p>
+<p><span><span><span>然後，我們仍然必須將動態形狀配置為<em><span><span>dynamic</span></span></em><span><span>和</span></span><em><span><span>responseable</span></span></em><span><span>。</span></span></span></span></span></p>
+<p><span><span><span>We do this in the<span> </span></span><a href="http://www.coppeliarobotics.com/helpFiles/en/shapeDynamicsProperties.htm">shape dynamics properties</a><span>. Select first the base dynamic shape (i.e.<span> </span></span><em>robot_dyn</em><span>),</span></span></span></p>
+<p><span><span><span>我們在<a href="http://www.coppeliarobotics.com/helpFiles/en/shapeDynamicsProperties.htm"><span><span>形狀動力學屬性中</span></span></a><span><span>執行此操作</span><span>。</span><span>首先選擇基本動態形狀（即</span></span><em><span><span>robot_dyn</span></span></em><span><span>），</span></span></span></span></span></p>
+<p><span><span><span>then check the<span> </span></span><strong>Body is respondable</strong><span><span> </span>item. Enable the first 4<span> </span></span><strong>Local respondable mask</strong><span><span> </span>flags, and disable the last 4<span> </span></span><strong>Local respondable mask</strong><span><span> </span>flags:</span></span></span></p>
+<p><span><span><span>然後檢查“ <strong><span><span>主體”是否為可響應</span></span></strong><span><span>項。</span><span>啟用前四個“<span> </span></span></span><strong><span><span>本地可響應掩碼”</span></span></strong><span><span>標誌，並禁用後四個“<span> </span></span></span><strong><span><span>本地可響應掩碼”</span></span></strong><span><span>標誌：</span></span></span></span></span></p>
+<p><span><span><span>it is important for consecutive respondable links not to collide with each other. For the first mobile dynamic link in our robot (i.e.<span> </span></span><em>robot_link_dyn1</em><span>),</span></span></span></p>
+<p><span><span><span>對於連續的可響應鏈接不要彼此衝突非常重要。對於機器人中的第一個移動動態鏈接（即<em><span><span>robot_link_dyn1</span></span></em><span><span>），</span></span></span></span></span></p>
+<p><span><span><span>we also enable the<span> </span></span><strong>Body is respondable</strong><span><span> </span>item, but this time we disable the first 4<span> </span></span><strong>Local respondable mask</strong><span><span> </span>flags, and enable the last 4<span> </span></span><strong>Local respondable mask</strong><span><span> </span>flags.</span></span></span></p>
+<p><span><span><span>我們還啟用了“ <strong><span><span>身體可響應”</span></span></strong><span><span>項，但是這次我們禁用了前四個“<span> </span></span></span><strong><span><span>本地可響應”掩碼</span></span></strong><span><span>標誌，並啟用最後4個</span></span><strong><span><span>本地可響應掩碼</span></span></strong><span><span>標誌。</span></span></span></span></span></p>
+<p><span><span><span>We repeat the above procedure with all other dynamic links, while always alternating the<span> </span></span><strong>Local respondable mask</strong><span><span> </span>flags:</span></span></span></p>
+<p><span><span><span>我們對所有其他動態鏈接重複上述過程，同時始終交替使用<strong><span><span>Local Responsible Mask</span></span></strong><span><span>標誌：</span></span></span></span></span></p>
+<p><span><span><span>once the model will be defined, consecutive dynamic shapes of the robot will not generate any collision response when interacting with each other.</span></span></span></p>
+<p><span><span><span>一旦定義了模型，則連續的機器人動態形狀在彼此交互時不會產生任何碰撞響應。</span></span></span></p>
+<p><span><span><span>Try to always end up with a construction where the dynamic base of the robot, and the dynamic last link of the robot have only the first 4<span> </span></span><strong>Local respondable mask</strong><span><span> </span>flags enabled,</span></span></span></p>
+<p><span><span><span>束嘗試始終以這樣一種構造結：機器人的動態基礎和機器人的動態最後一個鏈接僅啟用了前4個“ <strong><span><span>本地可響應掩碼”</span></span></strong><span><span>標誌，</span></span></span></span></span></p>
+<p><span><span><span>so that we can attach the robot to a mobile platform, or attach a gripper to the last dynamic link of the robot without dynamic collision interferences.</span>。</span></span><a href="http://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm"><span></span></a><span></span></p>
+<p><span><span>以便我們可以將機器人附加到移動平台，或附加一個抓取器連接到機器人的最後一個動態鏈接，沒有動態碰撞干擾。</span></span></p>
+<p><span><span>Finally, we still need to tag our dynamic shapes as <strong>Body is dynamic</strong><span>.</span></span></span></p>
+<p><span><span><span>最後，我們仍然需要將動態形狀標記為<strong><span><span>Body is dynamic</span></span></strong><span><span>。</span></span></span></span></span></p>
+<p><span><span><span>We do this also in the<span> </span></span><a href="http://www.coppeliarobotics.com/helpFiles/en/shapeDynamicsProperties.htm">shape dynamics properties</a><span>. We can then enter the mass and inertia tensor properties manually,</span></span></span></p>
+<p><span><span><span>我們也在<a href="http://www.coppeliarobotics.com/helpFiles/en/shapeDynamicsProperties.htm"><span><span>形狀動力學屬性中</span></span></a><span><span>執行此操作</span><span>。</span><span>然後，我們可以手動輸入質量和慣性張量屬性，</span></span></span></span></span></p>
+<p><span><span><span>or have those values automatically computed (recommended) by clicking<span> </span></span><strong>Compute mass &amp; inertia properties for selected convex shapes</strong><span>.</span></span></span></p>
+<p><span><span><span>或者通過單擊“ <strong><span><span>計算選定凸形的質量和慣性屬性”來</span></span></strong><span><span>自動計算（推薦）那些值</span><span>。</span></span></span></span></span></p>
+<p><span><span><span>Remember also<span> </span></span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#masses">this</a><span><span> </span>and<span> </span></span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#inertias">that</a><span><span> </span>dynamic design considerations.</span></span></span></p>
+<p><span><span><span>還請記住<a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#masses"><span><span>這一點</span></span></a><span><span>以及</span></span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#inertias"><span><span>該</span></span></a><span><span>動態設計注意事項。</span></span></span></span></span></p>
+<p><span><span><span>This dynamic base of the robot is a special case: most of the time we want the base of the robot (i.e.<span> </span></span><em>robot_dyn</em><span>) to be non-dynamic (i.e. static),</span></span></span></p>
+<p><span><span><span>機器人的動態基礎是一個特例：大多數情況下，我們需要機器人的基礎（即<em><span><span>robot_dyn</span></span></em><span><span>）為非動態（即靜態），</span></span></span></span></span></p>
+<p><span>otherwise, if used alone, the robot might fall during movement.</span></p>
+<p><span>否則，如果單獨使用，則機器人可能會在運動過程中掉落。</span></p>
+<p><span>But as soon as we attach the base of the robot to a mobile platform, we want the base to become dynamic (i.e. non-static).</span></p>
+<p><span>但是，一旦我們將機器人的底座連接到移動平台上，我們就希望底座變得動態（即非靜態）。</span></p>
+<p><span>We do this by enabling the<span> </span></span><strong>Set to dynamic if gets parent</strong><span><span> </span>item, then disabling the</span><strong><span> </span>Body is dynamic item</strong><span>.</span></p>
+<p><span>我們通過啟用“ <strong><span><span>如果獲取父</span></span></strong><span><span>項時</span><strong><span>設置為動態”</span></strong><span>項，然後禁用“<span> </span></span></span><strong><span><span>主體為動態項”<span> </span></span></span></strong><span><strong><span>來</span></strong><span>做到這一點</span><span>。</span><span>現在運行仿真：</span></span></span></p>
+<p><span>Now run the simulation: all dynamic shapes, except for the base of the robot, should fall. That attached visual shapes will follow their dynamic pendants.</span></p>
+<p><span><span>除了機器人的基座之外，所有動態形狀都應下降。</span><span>附加的視覺形狀將跟隨其動態吊墜。</span></span></p>
+<p><em><span style="color: #ff0000;">40723239 黃學聖</span></em></p>
+<p><span style="background-color: #999999; color: #000000;">Model definition</span></p>
+<p>Now we are ready to define our model. We start by building the model herarchy: we attach the last dynamic robot link (<em>robot_link_dyn6</em>) to its corresponding joint (<em>robot_joint6</em>) by selecting <em>robot_link_dyn6</em>, then control-selecting <em>robot_joint6</em>, then [Menu bar --&gt; Edit --&gt; Make last selected object parent]. We could also have done this step by simply dragging object <em>robot_link_dyn6</em> onto <em>robot_link6</em> in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a></span>. We go on by now attaching <em>robot_joint6</em> to <em>robot_link_dyn5</em>, and so on, until arrived at the base of the robot. We now have following scene hierarchy:</p>
+<p><span style="background-color: #999999; color: #000000;">型號定義</span></p>
+<p>現在我們準備定義模型了。我們從建立模型層次結構開始：通過選擇<em>robot_link_dyn6</em>，然後控制選擇<em>robot_joint6</em>，然後選擇<span>[</span>菜單欄<span>-&gt;</span>編輯<span>-&gt;</span>使最後一個選中的對象，將最後一個動態機器人鏈接（<em>robot_link_dyn6</em>）附加到其相應的關節（<em>robot_joint6</em>）。<span>]</span>。我們也可以做這一步通過簡單的拖動對象<em>robot_link_dyn6</em>到<em>robot_link6</em>在<span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy"><span>場景層次</span></a></span>。現在，我們將<em>robot_joint6</em>附加到<em>robot_link_dyn5</em><em>上</em>，依此類推，直到到達機器人的底部。現在，我們具有以下場景層次結構：</p>
+<p> </p>
+<p>So we rename <em>robot</em> to <em>robot_visibleBase</em>, and <em>robot_dyn</em> to <em>robot</em>. Now we select the base of the hierarchy tree (i.e. object <em>robot</em>) and in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm">object common properties</a></span> we enable <strong>Object is model base</strong>. We also enable <strong>Object/model can transfer or accept DNA</strong>. A model bounding box appeared, encompassing the whole robot. The bounding box however appears to be too large: this is because the bounding box also encompasses the invisible items, such as the joints. We now exclude the joints from the model bounding box by enabling the <strong>Don't show as inside model selection</strong> item for all joints. We could do the same procedure for all invisible items in our model. This is also a useful option in order to also exclude large sensors or other items from the model bounding box. We now have following situation:</p>
+<p>我們將<em>robot</em>重命名為<em>robot_visibleBase</em>，並將<em>robot_dyn</em>重命名為<em>robot</em>。現在，我們選擇層次結構樹的基礎（即對像<em>機械手</em>），並在<span><a href="http://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm"><span>對象公共屬性中</span></a></span>啟用<span>“ </span><strong>對象為模型基礎<span>”</span></strong>。我們還使<strong>對象<span>/</span>模型可以轉移或接受<span>DNA</span></strong>。出現了一個模型包圍盒，包圍了整個機器人。但是，邊界框似乎太大：這是因為邊界框還包含不可見的項，例如關節。現在，通過對所有關節啟用<strong>“</strong><strong>不顯示為內部模型<span>”</span>選擇</strong>項，將關節從模型邊界框中排除。我們可以對模型中的所有不可見項執行相同的過程。這也是一個有用的選項，可以將大型傳感器或其他項目也排除在模型邊界框之外。我們現在有以下情況：</p>
+<p> </p>
+<p>We now protect our model from accidental modification. We select all visible objects in the robot, then enable <strong>Select base of model instead</strong>: if we now click a visible link in the scene, the base of the robot will be selected instead. This allows us to manipulate the model as if it was a single object. We can still select visible objects in the robot via control-shift-clicking in the scene, or by selecting the object in the scene hierarchy. We now put the robot into a correct default position/orientation. First, we save current scene as a reference. Then we select the model and <span><a href="http://www.coppeliarobotics.com/helpFiles/en/coordinateDialog.htm">modify its position/orientation</a></span> appropriately. It is considered good practice to position the model (i.e. its base object) at X=0 and Y=0.</p>
+<p>現在，我們保護模型免受意外修改。我們選擇機器人中所有可見的對象，然後啟用<span>“ </span><strong>選擇模型的基礎<span>”</span></strong>：如果現在單擊場景中的可見鏈接，則會改為選擇機器人的基礎。這使我們可以像對待單個對像一樣操作模型。我們仍然可以通過按住<span>Shift</span>鍵並單擊場景或在場景層次中選擇對象來選擇機器人中的可見對象。現在，我們將機器人置於正確的默認位置<span>/</span>方向。首先，我們將當前場景保存為參考。然後我們選擇模型並<span><a href="http://www.coppeliarobotics.com/helpFiles/en/coordinateDialog.htm"><span>修改其位置/</span><span>方向</span></a></span>適當地。將模型（即其基礎對象）放置在<span>X = 0</span>和<span>Y = 0</span>處被認為是一種好習慣。</p>
+<p> </p>
+<p>We now run the simulation: the robot will collapse, since the joints are not controlled by default. <span><a href="http://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm#joints">When we added the joints in the previous stage</a></span>, we created joints in force/torque mode, but their motor or controller was disabled (by default). We can now adjust our joints to our requirements. In our case, we want a simple PID controller for each one of them. In the joint dynamic properties, we click <strong>Motor enabled</strong> and adjust the <strong>maximum torque</strong>. We then click <strong>Control loop enabled</strong> and select <strong>Position control (PID)</strong>. We now run the simulation again: the robot should hold its position. Try to switch the current physics engine to see if the behaviour is consistent across all supported physics engines. You can do this via the appropriate <span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">toolbar button</a></span>, or in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/dynamicsDialog.htm">general dynamics properties</a></span>.</p>
+<p>現在我們運行模擬：由於默認情況下關節不受控制，因此機器人將崩潰。<span><a href="http://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm#joints"><span>在上一階段添加關節時</span></a></span>，我們以力<span>/</span>扭矩模式創建了關節，但其電動機或控制器已禁用（默認情況下）。現在，我們可以根據需要調整關節。在我們的案例中，我們希望為每個控制器都提供一個簡單的<span>PID</span>控制器。在關節動態屬性中，單擊<span>“ </span><strong>啟用電動機<span>”</span></strong>並調整<strong>最大扭矩</strong>。然後，我們點擊<span>“ </span><strong>啟用控制環<span>”</span>，</strong>然後選擇<span>“ </span><strong>位置控制（<span>PID</span>）<span>”</span></strong>。現在，我們再次運行仿真：機器人應保持其位置。嘗試切換當前的物理引擎，以查看行為在所有受支持的物理引擎之間是否一致。您可以通過適當的<span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars"><span>工具欄按鈕</span></a></span>，或在<span><a href="http://www.coppeliarobotics.com/helpFiles/en/dynamicsDialog.htm"><span>常規動力學屬性中執行此操作</span></a></span>。</p>
+<p> </p>
+<p>During simulation, we now verify the scene dynamic content via the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">Dynamic content visualization &amp; verification toolbar button</a></span>. Now, only items that are taken into account by the physics engine will be display, and the display is <span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#dynamicContentVisualization">color-coded</a></span>. It is <strong>very important</strong> to always do this, and specially when your dynamic model doesn't behave as expected, in order to quickly debug the model. Similarly, always look at the scene hierarchy during simulation: dynamically enabled objects should display a ball-bounding icon on the right-hand side of their name.</p>
+<p>在仿真過程中，我們現在通過<span>“ </span><span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars"><span>動態內容可視化和驗證”</span><span>工具欄按鈕來</span></a></span>驗證場景動態內容。現在，將僅顯示物理引擎考慮的項目，並且該顯示使用<span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#dynamicContentVisualization"><span>顏色編碼</span></a></span>。這是<strong>非常重要的</strong>，始終做到這一點，特別是當預期，為了快速調試模型動態模型不表現。同樣，在仿真過程中請始終查看場景層次：動態啟用的對象應在其名稱的右側顯示一個球形圖標。</p>
+<p>Finally, we need to prepare the robot so that we can easily attach a gripper to it, or easily attach the robot to a mobile platform (for instance). Two dynamically enabled shapes can be rigidly attached to each other in two different ways:</p>
+<p>  <strong>by grouping them</strong>: select the shapes, then [Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Group selected shapes].</p>
+<p>  <strong>by attaching them via a force/torque sensor</strong>: a <span><a href="http://www.coppeliarobotics.com/helpFiles/en/forceSensors.htm">force torque sensor</a></span> can also act as a rigid link between two separate dynamically enabled shapes.</p>
+<p>In our case, only option 2 is of interest. We create a force/torque sensor with [Menu bar --&gt; Add --&gt; Force sensor], then move it to the tip of the robot, then attach it to object <em>robot_link_dyn6</em>. We change its size and visual appearance appropriately (a red force/torque sensor is often perceived as an optional attachment point, check the various robot models available). We also change its name to <em>robot_attachment</em>:</p>
+<p>最後，我們需要準備機器人，以便我們可以輕鬆地將抓取器連接到它，或輕鬆地將機器人連接到移動平台（例如）。可以通過兩種不同的方式將兩個動態啟用的形狀嚴格地彼此附加：</p>
+<p>  <strong>通過對它們進行分組</strong>：選擇形狀，然後單擊<span>[</span>菜單欄<span>-&gt;</span>編輯<span>-&gt;</span>分組<span>/</span>合併<span>-&gt;</span>對選定形狀進行分組<span>]</span>。</p>
+<p>  <strong>通過通過力<span>/</span>扭矩傳感器進行連接</strong>：<span><a href="http://www.coppeliarobotics.com/helpFiles/en/forceSensors.htm"><span>力扭矩傳感器</span></a></span>還可以充當兩個單獨的動態啟用形狀之間的剛性鏈接。</p>
+<p>在我們的情況下，只有選項<span>2</span>是有意義的。我們使用<span>[</span>菜單欄<span>-&gt;</span>添加<span>-&gt;</span>力傳感器<span>]</span>創建一個力<span>/</span>扭矩傳感器，然後將其移動到機器人的尖端，然後將其附加到對象<em><span>robot_link_dyn6</span>上</em>。我們會適當地更改其尺寸和外觀（紅色力<span>/</span>扭矩傳感器通常被視為可選的連接點，請檢查可用的各種機器人型號）。我們還將其名稱更改為<em><span>robot_attachment</span></em>：</p>
+<p>Now we drag a gripper model into the scene, keep it selected, then control-click the attachment force sensor, then click the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">Assembling/disassembling toolbar button</a></span>. The gripper goes into place:</p>
+<p>現在，我們將抓取器模型拖到場景中，使其保持選中狀態，然後按住<span>Control</span>鍵並點按附件力傳感器，然後單擊<span>“ </span><span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars"><span>裝配/</span><span>拆卸”</span><span>工具欄按鈕</span></a></span>。夾持器到位：</p>
+<p>The gripper knew how to attach itself because it was appropriately configured during its model definition. We now also need to properly configure the robot model, so that it will know how to attach itself to a mobile base for instance. We select the robot model, then click <strong>Assembling</strong> in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm">object common properties</a></span>. Set an empty string for <strong>'Parent' match values</strong>, then click <strong>Set matrix</strong>. This will memorize the current base object's local transformation matrix, and use it to position/orient itself relative to the mobile robot's attachment point. To verify that we did things right, we drag the model <em>Models/robots/mobile/KUKA Omnirob.ttm</em> into the scene. Then we select our robot model, then control-click one of the attachment points on the mobile platform, then click the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">Assembling/disassembling toolbar button</a></span>. Our robot should correctly place itself on top of the mobile robot:</p>
+<p>抓具知道如何附加自身，因為它在模型定義期間進行了適當的配置。現在，我們還需要正確配置機器人模型，以便它將知道如何將自己附加到移動基座上。我們選擇機器人模型，然後在<span><a href="http://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm"><span>對象公共屬性中</span></a></span>單擊<span>“ </span><strong>組裝</strong><span> ” </span>。為<strong>“</strong><strong>父項<span>”</span>匹配值</strong>設置一個空字符串，然後點擊<strong>設置矩陣</strong>。這將記住當前基礎對象的局部轉換矩陣，並使用它相對於移動機器人的附著點定位<span>/</span>定向。為了驗證我們做的正確，我們拖動模型<em>Models / robots / mobile / KUKA Omnirob.ttm</em>進入現場。然後，選擇機器人模型，然後在移動平台上按住<span>Control</span>鍵並單擊其中一個附接點，然後單擊<span>“ </span><span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars"><span>組裝/</span><span>拆卸”</span><span>工具欄按鈕</span></a></span>。我們的機器人應該正確地將自己放置在移動機器人的頂部：</p>
+<p>Now we could add additional items to our robot, such as sensors for instance. At some point we might also want to attach <span><a href="http://www.coppeliarobotics.com/helpFiles/en/scripts.htm">embedded scripts</a></span> to our model, in order to control its behaviour or configure it for various purposes. In that case, make sure to understand <span><a href="http://www.coppeliarobotics.com/helpFiles/en/accessingGeneralObjects.htm">how object handles are accessed from embedded scripts</a></span>. We can also control/access/interface our model from a <span><a href="http://www.coppeliarobotics.com/helpFiles/en/plugins.htm">plugin</a></span>, from a <span><a href="http://www.coppeliarobotics.com/helpFiles/en/remoteApiOverview.htm">remote API</a></span> client, from a <span><a href="http://www.coppeliarobotics.com/helpFiles/en/rosInterfaces.htm">ROS</a></span> node, from a <a href="http://www.coppeliarobotics.com/helpFiles/en/blueZeroPlugin.htm">BlueZero</a> node, or from an <span><a href="http://www.coppeliarobotics.com/helpFiles/en/addOns.htm">add-on</a></span>.</p>
+<p>Now we make sure we have reverted the changes done during robot and gripper attachment, we collapse the hierarchy tree of our robot model, select the base of our model, then save it with [Menu bar --&gt; File --&gt; Save model as...]. If we saved it in the <em>model</em> folder, then the model will be available in the <span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#ModelBrowser">model brower</a></span>.</p>
+<p>現在，我們可以向機器人添加其他項目，例如傳感器。在某些時候，我們可能還希望將<span><a href="http://www.coppeliarobotics.com/helpFiles/en/scripts.htm"><span>嵌入式腳本</span></a></span>附加到我們的模型中，以便控制其行為或出於各種目的對其進行配置。在這種情況下，請確保了解<span><a href="http://www.coppeliarobotics.com/helpFiles/en/accessingGeneralObjects.htm"><span>如何從嵌入式腳本訪問對象句柄</span></a></span>。我們還可以通過<span><a href="http://www.coppeliarobotics.com/helpFiles/en/plugins.htm"><span>插件</span></a></span>，<span><a href="http://www.coppeliarobotics.com/helpFiles/en/remoteApiOverview.htm"><span>遠程API</span></a></span>客戶端，<span><a href="http://www.coppeliarobotics.com/helpFiles/en/rosInterfaces.htm">ROS</a></span>節點，<span><a href="http://www.coppeliarobotics.com/helpFiles/en/blueZeroPlugin.htm">BlueZero</a></span>節點或<span><a href="http://www.coppeliarobotics.com/helpFiles/en/addOns.htm"><span>附加組件</span></a></span>來控制<span>/</span>訪問<span>/</span>接口模型。</p>
+<p><span style="color: #808080;">現在，確保已恢復在機械手和抓爪安裝過程中所做的更改，我們折疊了機械手模型的層次樹，選擇了模型的基礎，然後使用[菜單欄-&gt;文件-&gt;將模型另存為...]。如果我們將其保存在模型文件夾中，則該模型將在<a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#ModelBrowser">模型瀏覽器中</a>可用。</span></p>
+<p></p><br />W17 協同任務 << <a href='W17 協同任務.html'>Previous</a> <a href='Webots User Guide Tutorial 2.html'>Next</a> >> Webots User Guide Tutorial 2</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
